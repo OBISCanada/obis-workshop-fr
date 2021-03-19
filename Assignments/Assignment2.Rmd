@@ -1,5 +1,5 @@
 ---
-title: "Assignment 2 - Global distribution of Lagis species"
+title: "Devoir 2 - Distribution globale des espèces du genre Lagis"
 output: html_document
 ---
 
@@ -7,9 +7,9 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Global distribution of Lagis species
+## istribution globale des espèces du genre Lagis
 
-For this assignment, create a map showing the distributions of the species in the trumpet worm genus Lagis. Can you spot any suspicious occurrences? If so, try to identify them.
+Dans ce devoir, vous devez créer une carte représentant la distribution des espèces de vers trompette (genre Lagis. Y a t il des occurrences qui vous semblent être erronées ? Si oui, identifiées les.
 
 ```{r }
 
