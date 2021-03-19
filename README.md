@@ -8,11 +8,11 @@ Cet atelier a été adapté de l'atelier de formation OBIS standard de 4,5 jours
 **Nom** - *(home OBIS node)* - email
 
 
-Gabriel Leblanc - (Observatoire Global du Saint-Laurent) - leblancg@ogsl.ca
+Gabriel Leblanc - (Observatoire Global du Saint-Laurent) - leblancg@ogsl.ca - Coordonnateur – Gestion de données
 
-Julie Dionne Lavoie -  (Observatoire Global du Saint-Laurent) - dionnej@ogsl.ca
+Julie Dionne Lavoie -  (Observatoire Global du Saint-Laurent) - dionnej@ogsl.ca - Intégratrice de données – Géographe
 
-Pauline Chauvet - (Observatoire Global du Saint-Laurent) - chauvetp@ogsl.ca
+Pauline Chauvet - (Observatoire Global du Saint-Laurent) - chauvetp@ogsl.ca - Conseillère scientifique
 
 Jon Pye - (Ocean Tracking Network) - jdpye@dal.ca
 
