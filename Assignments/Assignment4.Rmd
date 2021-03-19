@@ -1,5 +1,5 @@
 ---
-title: "Assignment 4 - How to establish baselines of invasive species?"
+title: "Devoir 4 - Comment établir un référentiel d espèces envahissantes?"
 output: html_document
 author: Claude Nozères
 ---
@@ -8,16 +8,16 @@ author: Claude Nozères
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## How to establish baselines of invasive species?
+## Comment établir un référentiel d espèces envahissantes?
 
-One use of occurrence data is having records of species that change at times and places. Examples include the green crab (Carcinus maenas), violet tunicates (Botrylloides violaceus), and another tunicate — Ciona intestinalis. With global warming, one might expect to find that these species may spread north. 
+Une des utilisations des données d occurrence est d avoir des informations sur les espèces qui changent de position spatio-temporelle a l exepmle du crabe vert (Carcinus maenas), du Botrylloïde violet (Botrylloides violaceus), et d autres tuniciers tels que — Ciona intestinalis. Avec les changements climatique et le réchauffement de certaines eaux, nous pouvons nous attendre à une extension de l air de répartition vers le nord.
 
-Using OBIS environmental records, examine the temperature and occurrence records of Ciona intestinalis. One record appears in the Arctic. Is there evidence to refute it?
+En utilisant les entrées environnementales OBIS, examinez la température et les données d occurrence de Ciona intestinalis. Nous trouvons une observation en Arctique. Y a t il des preuvent pour refuser cette observation ?
 
-*Tip: Is there evidence for a related, but endemic species in the region?*
+*Par exemple: d autres espèces liées mais endémiques à la région?*
 
-**Bonus:** contact data source of Ciona record for more information or updates.
-**Bonus:** repeat exercise with Botrylloides violaceus.
+**Bonus:** contactez la source de cette donnée pour plus d infos.
+**Bonus:** faire de même avec Botrylloides violaceus.
 
 ```{r }
 
