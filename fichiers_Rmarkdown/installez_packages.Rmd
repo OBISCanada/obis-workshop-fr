@@ -2,7 +2,7 @@
 title: "install_packages.Rmd"
 output: html_document
 ---
-
+Pour les version R4.0+ vous pourriez avoir besoin d installer Rtools40 : https://cran.r-project.org/bin/windows/Rtools/
 Installez les {packages}, ils contiennent toutes les `fonction` que nous utiliserons pendant ce workshop
 
 ```{r}
