@@ -22,7 +22,13 @@ http://adn.biol.umontreal.ca/~numericalecology/lex/lexique.html
 
 ----ggplot2 fiches d'aides
 https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf
+
+----choisir des fonds de carte
 https://carto.com/help/building-maps/basemap-list/
+
+----Feuille de mémoire dplyr
+https://rstudio.com/wp-content/uploads/2016/01/data-wrangling-french.pdf
+
 
 
 ----Les API avec R
