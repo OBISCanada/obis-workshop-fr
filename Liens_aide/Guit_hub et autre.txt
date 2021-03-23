@@ -1,0 +1,22 @@
+----Se familiariser avec guithub
+https://essicolo.github.io/ecologie-mathematique-R/chapitre-git.html#introduction-%C3%A0-github
+--------Pour cloner le guit et travailler dessus en local
+https://desktop.github.com/
+https://www.sourcetreeapp.com/ associé à sa documentation https://confluence.atlassian.com/get-started-with-sourcetree
+--------R et guithub
+	En dehors des packages « approuvés » disponibles sur le CRAN, il est également possible de charger dans R des packages
+	que d’autres utilisateurs ont mis à disposition, par exemple sur leurs github personnels.
+	Pour cela, il faudra utiliser le package « devtools » et installer certains composants si vous ne les avez pas déjà (Rtools sous Windows par exemple). 
+	Vous pouvez trouver plus d’infos à ce sujet ici : https://github.com/hadley/devtools.
+
+----Cours cours reliés à la formation
+https://classroom.oceanteacher.org/enrol/index.php?id=430 
+
+----Introduction au CIO, IODE, OBIS, OTGA par Ward Appeltans.
+https://youtu.be/4rVEkWOhkoM 
+
+---- OBIS Canada
+http://ipt.iobis.org/obiscanada/
+
+----Guide rapide pour tous les termes DwC essentiel/important
+https://dwc.tdwg.org/terms 

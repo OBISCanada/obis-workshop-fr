@@ -16,7 +16,6 @@ https://github.com/iobis/robis (page guit du package, vous pouvez y contacter le
 https://www.rdocumentation.org/packages/robis/versions/2.3.9/topics/dataset (documentation des packages. Vous pouvez aussi l'obtenir avec la commande: ?robis dans la console R ou encore en pdf https://cran.rstudio.com/web/packages/robis/robis.pdf)
 
 
-
 ----Lexique français anglais d'écologie numérique et de statistique
 http://adn.biol.umontreal.ca/~numericalecology/lex/lexique.html
 
@@ -34,10 +33,4 @@ https://rstudio.com/wp-content/uploads/2016/01/data-wrangling-french.pdf
 ----Les API avec R
 https://thinkr.fr/les-api-un-enfer/
 
-----Se familiariser avec guithub
-https://essicolo.github.io/ecologie-mathematique-R/chapitre-git.html#introduction-%C3%A0-github
-R et guithub
-	En dehors des packages « approuvés » disponibles sur le CRAN, il est également possible de charger dans R des packages
-	que d’autres utilisateurs ont mis à disposition, par exemple sur leurs github personnels.
-	Pour cela, il faudra utiliser le package « devtools » et installer certains composants si vous ne les avez pas déjà (Rtools sous Windows par exemple). 
-	Vous pouvez trouver plus d’infos à ce sujet ici : https://github.com/hadley/devtools.
+
