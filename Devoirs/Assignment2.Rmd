@@ -1,5 +1,5 @@
 ---
-title: "Devoir 2 - Distribution globale des espèces du genre Lagis"
+title: "Devoir 2_corrigé - Distribution globale des espèces du genre Lagis"
 output: html_document
 ---
 
@@ -7,14 +7,28 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## istribution globale des espèces du genre Lagis
+## Distribution globale des espèces du genre Lagis
 
 Dans ce devoir, vous devez créer une carte représentant la distribution des espèces de vers trompette (genre Lagis. Y a t il des occurrences qui vous semblent être erronées ? Si oui, identifiées les.
 
-```{r }
-
-
+```{r charger les données}
+library(robis)
+Lagis<-occurrence("Lagis")
 
 ```
 
+```{r mise en forme}
+library(maps)
+world <- map_data("world")
 
+ggplot() +
+ geom_polygon(data = world, aes(x = long, y = lat, group = group), fill = "#dddddd") +
+ geom_point(data = Lagis, aes(x = decimalLongitude, y = decimalLatitude))+
+ coord_fixed(1)
+ 
+ggplot() +
+ geom_polygon(data = world, aes(x = long, y = lat, group = group), fill = "#dddddd") +
+ geom_point(data = Lagis, aes(x = decimalLongitude, y = decimalLatitude)) +
+ coord_fixed(1, xlim = c(-50, 180), ylim = c(-60, 100))
+
+```
