@@ -1,6 +1,8 @@
 ---
 title: "Devoir 2_corrigé - Distribution globale des espèces du genre Lagis"
 output: html_document
+editor_options: 
+  chunk_output_type: inline
 ---
 
 ```{r setup, include=FALSE}
@@ -19,6 +21,7 @@ Lagis<-occurrence("Lagis")
 
 ```{r mise en forme}
 library(maps)
+library(ggplot2)
 world <- map_data("world")
 
 ggplot() +
@@ -31,4 +34,15 @@ ggplot() +
  geom_point(data = Lagis, aes(x = decimalLongitude, y = decimalLatitude)) +
  coord_fixed(1, xlim = c(-50, 180), ylim = c(-60, 100))
 
+```
+
+
+```{r vérification des données}
+library(obistools)
+#Données potentiellement terrestres
+landC<-check_onland(Lagis,report=T, buffer=500)
+print(landC)
+#Données au milieu de l Atlantique
+depthC<-check_depth(Lagis, report=T, depthmargin = 10)
+print(depthC)
 ```
