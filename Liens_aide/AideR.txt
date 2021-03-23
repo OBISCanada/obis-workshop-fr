@@ -28,9 +28,12 @@ https://carto.com/help/building-maps/basemap-list/
 ----Feuille de mémoire dplyr
 https://rstudio.com/wp-content/uploads/2016/01/data-wrangling-french.pdf
 
-
-
 ----Les API avec R
 https://thinkr.fr/les-api-un-enfer/
+
+----Package eml, xml avec R
+https://www.rdocumentation.org/packages/EML/versions/2.0.3
+https://www.rdocumentation.org/packages/emld/versions/0.5.1
+
 
 
