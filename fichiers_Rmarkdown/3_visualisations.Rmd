@@ -1,5 +1,5 @@
 ---
-title: "robis_visualizations"   
+title: "visualisation_robis"   
 output: html_document
 ---
 # Visualiser les données OBIS
@@ -7,38 +7,43 @@ output: html_document
 
 #### Introduction au package {ggplot2}
 
-Pour faire des cartes statique dans R, nous utiliserons le package {ggplot2}.
-Alloez chercher des données d' occurrence de poisson lune de Ramsay dans OBIS:
+Pour faire des cartes statiques dans R, nous utiliserons le package {ggplot2}.
+Allez chercher des données d occurrence de poisson lune de Ramsay dans OBIS:
 
 ```{r}
-install.packages("devtools")
-
-library(devtools)
-
-install_github("iobis/robis")
-install.packages("ggplot2")
-install.packages("dplyr")
-install.packages("leaflet")
+#Liste des packages requis. Ici je les ai mis en commentaire car je les ai déjà installés
+#install.packages("devtools")
+#library(devtools)
+#install_github("iobis/robis")
+#install.packages("ggplot2")
+#install.packages("dplyr")
+#install.packages("leaflet")
+#install.packages("lubridate")
 ```
 
 ```{r}
+library(udunits2)#pas obligatoire suivant votre installation
 library(robis)
 molram <- occurrence("Mola ramsayi")
 
 ```
 
-Créez un diagramme de dispersion (nuage de point) en utilisant les coordonnées des occurences.
-Initialisez une base de travail avec `ggplot()` et utilisez `geom_point()` pour y projeter le nuage de point. `aes()` associe les esthétiques que l on veut utiliser à une variable à représenter (notez que les coordonnées x et y sont aussi considérés comme des esthétiques). Ici la longitude en abscisse et la latitude en ordonnée provenant de la table molram.
+Nous allons créer un diagramme de dispersion (nuage de point) en utilisant les coordonnées des occurences téléchargées.
+1-Initialisez une base de travail vide avec `ggplot()` 
+2-Utilisez `geom_point()` pour y projeter le nuage de point. `aes()` associe les esthétiques que l on veut utiliser à une variable à représenter (notez que les coordonnées x et y sont aussi considérées comme des esthétiques). Ici la longitude en abscisse et la latitude en ordonnée proviennent de la table molram.
 
-```{r molram}
+```{r}
 library(ggplot2)
 ggplot() + geom_point(data = molram, aes(x = decimalLongitude, y = decimalLatitude))
 
 ```
 
-On peut désormais ajouter un polygone du monde à notre carte. `map_data()` permet de charger des cartes de pays, continents ou du monde entier (attention, il faut aussi charger le package {maps}). Comme le polygone et les points sont projetés sur la même base de travail, il faut utiliser `coord_fixed()`  pour s assurer que les axes ont la même échelle. N hésitez pas à adapter les valeurs à entrer dans cette fonction pour tenir compte de la latitude de votre travail (équateur, pôles ...):
+On peut désormais ajouter un polygone du monde à notre carte.
+`map_data()` permet de charger des cartes de pays, continents ou du monde entier (attention, il faut aussi charger le package {maps}).
+Comme le polygone et les points sont projetés sur la même base de travail, il faut utiliser `coord_fixed()`  pour s assurer que les axes ont la même échelle.
+N hésitez pas à adapter les valeurs à entrer dans cette fonction pour tenir compte de la latitude de votre travail (équateur, pôles ...):
 
-```{r molram}
+```{r}
 library(maps)
 world <- map_data("world")
 
@@ -49,9 +54,9 @@ ggplot() +
  
 ```
  
- Zoomons en passant de xlim and ylim à coord_fixed:
+On peut agrandir la zone qui nous intéresse avec `coord_fixed`:
 
-```{r world molram}
+```{r}
 ggplot() +
  geom_polygon(data = world, aes(x = long, y = lat, group = group), fill = "#dddddd") +
  geom_point(data = molram, aes(x = decimalLongitude, y = decimalLatitude)) +
@@ -61,7 +66,7 @@ ggplot() +
  
  Il y a plusieurs façon de personnaliser les échelles de couleur dans ggplot (p. ex pour les daltoniens), voir `scale_color_brewer()`:
 
-```{r world molram}
+```{r}
 ggplot() +
  geom_polygon(data = world, aes(x = long, y = lat, group = group), fill = "#dddddd") +
  geom_point(data = molram, aes(x = decimalLongitude, y = decimalLatitude, color = institutionCode)) +
@@ -69,49 +74,68 @@ ggplot() +
  scale_color_brewer(palette = "Paired")
 
 ```
-<!--this ones doesnt show anything much, and the aes is messy-->
 
 `geom_bar()` peut être utilisée pour créer un graphique.
 Pour essayer, allons d' abord chercher un peu de données depuis OBIS et créons un simple diagramme en bâton:
 
 ```{r}
 dor <- occurrence("Doridoidea")
-
+#observons le nom des colonnes
+names(dor)
+#avant de faire un graphique avec des dates, toujours verifier comment R interprète ces valeurs
+class(dor$year)
+#La réponse étant "character", nous avons besoin de faire comprendre à R que ce sont des dates et non du texte simple, il saura ainsi mieux gérer les graphiques et les NAs
+#Il existe différents package pour gérer les dates tels que lubridate
+library(lubridate)
+annee<-as.Date(dor$year,format ="%Y")
+dor$year<-annee
+#Faire le graphique
 ggplot() +
- geom_bar(data = dor,stat='count', aes(x = year), binwidth = 2)
+ geom_bar(data = dor,stat='count', aes(x = year)) + 
+ scale_x_date(date_labels="%Y")+
+ theme(axis.text.x = element_text(angle=45))
 ```
 
-Regrouper les données par années n est pas toujours du meilleur effet visuel. Pour améliorer cela, nous allons créer une nouvelle colonne en utilisant `mutate()` de {dplyr} et faire un peu de calcul pour créer des regroupement décennaux pour les données.
+On peut vouloir regrouper les données par classes de 10 ans en créant une nouvelle colonne en utilisant `mutate()` de {dplyr}.
+Un peu de calcul plus tard vous obtenez vos classes et votre graphique
 
-```{r dor}
+```{r}
 library(dplyr)
-
-binned_dor <- dor %>% mutate(yearBins=round(as.integer(year),digits=-1) )
-
-                             
+# ici on utilise l opérateur pip %>% pour imbriquer plusieurs actions à la suite dans une même ligne (plus cours que le précédent chunk)
+#étape 1 : transformer les années en format numérique (souvenez vous, nous les avons transformé en Date).`year`
+#étape 2 : arrondir ces chiffres à la décennie (2005 devient 2000, 2018 devient 2020). `round`
+#étape 3 : ajouterla colonne yearBins. `mutate`
+binned_dor <- dor %>% mutate(yearBins=round(year(year),digits=-1) )
+#étape 4 : faire le graphique
 ggplot() +
  geom_bar(data = binned_dor,stat='count', aes(x = yearBins))
-
 ```
 
 En définissant le paramètre fill= à l esthétique (`aes()`), on peut colorer les bâtons en fonction de la famille et en jouant sur xlim() on peut zoomer un peu:
 
-```{r binned_dor}
+```{r}
 ggplot() +
  geom_histogram(data = binned_dor, stat="count", aes(x = yearBins, fill = family)) +
  scale_fill_brewer(palette = "Spectral") +
  xlim(c(1950, 2017))
 ```
-Passons à une autre fonctionnalité. Vous pouvez, en utilisant `facet_grid()`, séparer votre diagramme en fonction d un ou plusieurs facteurs:
+
+Passons à une autre fonctionnalité.
+Vous pouvez, en utilisant `facet_grid()`, séparer votre diagramme en fonction d un ou plusieurs facteurs:
 
 ```{r}
+#Récupérez les données du genre Lagis sur obis
 lag <- occurrence("Lagis")
-
+#Nous allons créer lag_2 qui est un sous échantillon de lag basé su l ID de deux jeux de données
 lag_2 <- lag %>% filter(dataset_id %in% c("00032856-12cd-46ff-b9d5-ddeaecae3c95", "f0e5ebdf-0685-49b3-bca7-74e0835ec0dc"))
-
+#Gérer les dates
+lag_2$year<-as.Date(as.character(lag_2$year),format ="%Y")
+#Finalement dessinons le graphique correspondant à ce sous échantillon
 ggplot() +
- geom_histogram(data = lag_2,stat='count',  aes(x = year), binwidth = 2) +
- facet_grid(dataset_id~ species)
+ geom_histogram(data = lag_2,stat='bin',bins = 70,aes(x = year)) +
+ facet_grid(dataset_id~ species) +
+ scale_x_date(date_breaks = "20 years",date_labels="%Y") +
+ theme(axis.text.x = element_text(angle=45,hjust=1))
 
 ```
  
@@ -121,13 +145,15 @@ Le package {leaflet} englobe la librairie populaire Leaflet JavaScript pour les 
 
 ##### Une carte simple
 
-Initialisez une carte avec `leaflet()` et ajoutez le fond de carte par défaut OpenStreetMap avec `addTiles()`, pour changer le fond de carte, choisissez un fournisseur de tuile ici et entrez l URL dans `addTiles()` :
-:
+Initialisez une carte avec `leaflet()` et ajoutez le fond de carte par défaut OpenStreetMap avec `addTiles()`.
+Pour changer le fond de carte, choisissez un fournisseur de tuile (p. ex: https://server.arcgisonline.com/arcgis/rest/services) et entrez l URL dans `addTiles()` :
+
 
 ```{r}
 library(leaflet)
 
-leaflet() %>% addTiles("https://server.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer/tile/{z}/{y}/{x}")
+my_map<-leaflet(width = 10, height = 10) %>% addTiles("https://server.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer/tile/{z}/{y}/{x}")
+my_map
 ```
 Allons maintenant chercher des données avec {robis} et ajoutons des marqueurs correspondants aux centroides avec la fonction `addCircleMarkers()`. Cette fonction accepte des longitudes et latitudes ainsi que certains paramètres stylistiques:
 
@@ -142,7 +168,7 @@ leaflet() %>%
   addCircleMarkers(popup = popup,lat = abrseg$decimalLatitude, lng = abrseg$decimalLongitude, radius = 3.5, weight = 0, fillOpacity = 1, fillColor = "#cc3300")
 
 ```
-##### PLusieurs espèces
+##### Plusieurs espèces
 
 Dans l exemple ci dessous, les données sont récupérées et visualisées pour deux espèces de morue.
 ```{r}

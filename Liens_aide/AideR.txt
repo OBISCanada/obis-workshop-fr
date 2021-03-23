@@ -3,6 +3,7 @@ https://www.r-bloggers.com/2015/12/how-to-learn-r-2/
 https://insileco.github.io/tips/
 https://thinkr.fr/debuter-avec-r-et-rstudio/
 https://qcbs.ca/training
+https://wiki.qcbs.ca/r_atelier2
 
 ----Science des données avec R
 https://essicolo.github.io/ecologie-mathematique-R/chapitre-intro-a-R.html

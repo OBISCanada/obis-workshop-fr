@@ -1,0 +1,236 @@
+---
+title: "tableau_Isabelle_spenvahissante"
+author: "PaulineChauvet"
+date: "22/03/2021"
+output: html_document
+---
+
+Les packages à installer
+```{r}
+installed.packages()
+
+library()
+
+#Mettre son dossier de travail
+setwd("")#ne pas oublier de passer les \ en /
+dir()#vérifier les fichier qui sont dans ton dossier
+```
+
+## Charger le tableau
+
+Après avoir vérifier dans excel les symboles, les decimales et valeurs manquante
+Puis avoir enregistrer en .csv 
+On va pouvoir ouvrir le tableau sous R
+
+```{r}
+table<-read.csv("donnee_log_monitorage2020_clear.csv",sep=";",header=T)#header parce que tes colonnes ont un titre et sep à préciser ";" ou ","
+head(table)#pour vérifier si ton tableau à été chargé correctement
+names(table)#pour récupérer le nom des colonnes
+table$Sampling.year# te permet de récupérer uniquement la colonne Sampling.year
+table[table$Sampling.year=="2019",]#pour chercher une année en particulier
+```
+
+## On va sous échantillonner le tableau général pour créer les trois tables occurrence, event, measurmentorfact
+
+Ne pas oublier que ces trois tables doivent être reliées pa un Identifiant commun, le event ID
+Ici il correspond à : Num_collecteur
+
+```{r}
+occurrence<-table[,c(17,18,19,21,23:31)]# [ligne,colonne] = pour aller chercher dans le tableau, si la partie ligne est vide, alors on garde toutes les lignes. Ici 17 = EventID, le numéro de collecteur. Les autres de 18 à 31 correspondent aux espèces surveillées
+```
+
+## Nous allons ensuite manipuler la table des occurrences pour la faire correspondre aux standard obis
+
+Nous aimerions avoir 11 colonnes
+eventID
+occurrenceID
+scientificNameID
+scientificName
+occurrenceStatus
+phylum
+class
+order
+family
+genus
+
+
+```{r}
+#Utilisation de la fonction `melt` du package {reshape2} pour retourner la table
+install.packages("reshape2")
+library(reshape2)
+
+#ICI id.var="EventID" ET measure.vars=toutes noms de colonne de tes espèces
+occurrence_melt<-melt(occurrence,id.var="Num_collecteur",measure.vars=c(names(occurrence[-1])))
+
+#Ensuite on veut faire en sorte que 0 = absence, que >0 = présence et que N/A = NA
+#pour ajouter la colonne de presence absence nous allons utiliser la fonction `mutate`, pour cela il faut charger le package {dplyr}
+library(dplyr)
+
+#transformer la colonne de value en valeurs numériques
+occurrence_melt$value<-as.numeric(occurrence_melt$value)
+
+#créer un objet vide que nous remplirons dans la boucle for
+occStatuss<-c()
+
+#faire la boucle for qui permettra d appliquer nos conditions (if) a toutes les lignes du tableau
+for (i in 1 : length(occurrence_melt$value)){  
+  if (is.na(occurrence_melt$value[i])) {
+    Statut<-"NULL"
+  } else if (occurrence_melt$value[i] == 0) {
+    Statut<-"absence"
+  } else {
+    Statut<-"presence"
+  }
+  occStatuss<-c(occStatuss,Statut)
+}
+
+#Intégrer cette nouvelle colonne
+occurrence_melt<-occurrence_melt %>% mutate (occurrenceStatus=occStatuss)
+```
+
+Avec les noms scientifiques nous pouvons une récupérer automatiquement les aphiaID, phylum, class, family sur worms
+
+/!\ La méthode 1 avec la boucle permet d intégrer directement dans le tableau ces nouvelles info. MAIS peut être très longue à tourner si le jeux de données est lourd (comme ici).
+Pour les gros jeux de données, préférez la seconde méthode
+
+```{r methode 1 boucle}
+#Installez et charger les packages nécessaires
+  #install.packages("jsonlite")
+  #install.packages("httr")
+  #install.packages("lubridate")
+  #install.packages("stringr")
+
+library("jsonlite")
+library("httr")
+library("lubridate")
+library(stringr)
+
+#Prendre l url fixe de worms
+worms_url<-"http://www.marinespecies.org/rest"
+
+#Préparer puis faire tourner la boucle for qui va aller chercher les ID
+aphiaID<-c()
+phylum<-c()
+class<-c()
+order<-c()
+family<-c()
+genus<-c()
+for (i in 1 : length(occurrence_melt$variable)){
+  #ici on concatène l adresse url. /!\pour worms format requête Genre%20espece
+	worms_sciName<-fromJSON(paste(worms_url,"AphiaRecordsByName",str_replace_all(occurrence_melt$variable[i],"_","%20"),sep="/"))
+	#récupération des infos
+	aphiaIDD<-worms_sciName$AphiaID[1]
+	phylumm<-worms_sciName$phylum[1]
+  classs<-worms_sciName$class[1]
+  orderr<-worms_sciName$order[1]
+  familyy<-worms_sciName$family[1]
+  genuss<-worms_sciName$genus[1]
+  #mise en vecteur des infos
+  aphiaID<-c(aphiaID,aphiaIDD)
+  phylum<-c(phylum,phylumm)
+  class<-c(class,classs)
+  order<-c(order,orderr)
+  family<-c(family,familyy)
+  genus<-c(genus,genuss)}
+
+#Création des nouvelles colonne et renommer les anciennes
+occurrence_melt %>% mutate (scientificNameID=aphiaID,Phylum=phylum,Class=class,Order=order,Family=family,Genus=genus)
+dplyr::rename(occurrence_melt,EventId = Num_collecteur,scientificName=variable,pourcentageCover=value)
+
+```
+
+
+```{r methode 2 par correpondance}
+#Récupérez toutes les espèces identifiées
+sciName<-names(summary(occurrence_melt$variable))
+#Nous aurons un problème de correspondance dans worms pour les individus dont on ne connait que le genre Genre spp
+#Il faudra déterminer ces derniers manuellement
+sciName<-sciName[-11:-12]
+#Rechercher les infos correspondantes dans WorMS
+#Prendre l url fixe de worms
+worms_url<-"http://www.marinespecies.org/rest"
+
+#Préparer puis faire tourner la boucle for qui va aller chercher les ID
+aphiaID<-c()
+phylum<-c()
+class<-c()
+order<-c()
+family<-c()
+genus<-c()
+scientificName<-c()
+for (i in 1 : length(sciName)){
+  #ici on concatène l adresse url. /!\pour worms format requête Genre%20espece
+	worms_sciName<-fromJSON(paste(worms_url,"AphiaRecordsByName",str_replace_all(sciName[i],"_","%20"),sep="/"))
+	#récupération des infos
+	aphiaIDD<-worms_sciName$AphiaID[1]
+	phylumm<-worms_sciName$phylum[1]
+  classs<-worms_sciName$class[1]
+  orderr<-worms_sciName$order[1]
+  familyy<-worms_sciName$family[1]
+  genuss<-worms_sciName$genus[1]
+  speciee<-worms_sciName$scientificname[1]
+  #mise en vecteur des infos
+  aphiaID<-c(aphiaID,aphiaIDD)
+  phylum<-c(phylum,phylumm)
+  class<-c(class,classs)
+  order<-c(order,orderr)
+  family<-c(family,familyy)
+  genus<-c(genus,genuss)
+  scientificName<-c(scientificName,speciee)}
+worms<-data.frame(sciName,aphiaID,phylum,class,order,family,genus,scientificName)
+
+#correspondance
+correspondancee<-data.frame(a=0,b=0,c=0,d=0,e=0,f=0,g=0,h=0)
+for (i in 1 : length(occurrence_melt$variable)){
+  for (j in 1 : length(worms)){
+    if (occurrence_melt$variable[i]==worms[j,1]){
+     a=worms$sciName[j]
+     b=worms$aphiaID[j]
+     c=worms$phylum[j]
+     d=worms$class[j]
+     e=worms$order[j]
+     f=worms$family[j]
+     g=worms$genus[j]
+     h=worms$scientificName[j]
+    }
+    else if (occurrence_melt$variable[i]=="Molgula_spp" | occurrence_melt$variable[i]=="Schizoporella_spp"){
+      a=occurrence_melt$variable[i]
+      b=NA
+      c=NA
+      d=NA
+      e=NA
+      f=NA
+      g=NA
+      h=NA
+    }
+  correspondance<-data.frame(a,b,c,d,e,f,g,h)  
+  }
+correspondancee<-rbind(correspondancee,correspondance)  
+}
+correspondancee<-correspondancee[-1,]
+
+occurrence_table<-occurrence_melt %>% mutate (scientificName=correspondancee$h,scientificNameID=correspondancee$b,Phylum=correspondancee$c,Class=correspondancee$d,Order=correspondancee$e,Family=correspondancee$f,Genus=correspondancee$g)
+
+pouet<-dplyr::rename(occurrence_table,EventId = Num_collecteur,Name=variable,pourcentageCover=value)
+a=seq(1:nrow(pouet))
+occurrenceID<-paste(pouet$EventId,a,sep="_")
+pouet_final<-pouet%>% mutate(occurrenceID=occurrenceID)
+write.table(pouet_final,"occurrence_table.csv",sep=";",row.names = F)
+ 
+```
+
+Nous pouvons maintenant nous pencher sur la table des évènements
+Elle doit contenir
+EventID = Num_collection
+eventDate = paste(Sample.Date,Sample.time,sep="T")
+decimalLongitude = Longitude
+decimalLatitude = Latitude
+minimumDepthInMeters
+maximumDepthInMeters
+
+
+```{r}
+#
+
+```
+
