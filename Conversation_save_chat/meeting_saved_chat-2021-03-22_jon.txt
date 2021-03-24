@@ -1,0 +1,133 @@
+09:05:16 From  Jon Pye (OTN)  to  Everyone : 64m -> 70.5m presence records in OBIS this month.
+09:18:01 From  Jon Pye (OTN)  to  Everyone : https://www.dfo-mpo.gc.ca/species-especes/mammals-mammiferes/program-programme/index-eng.html
+09:18:28 From  Gabriel Leblanc  to  Everyone : http://romm.ca/
+09:40:14 From  Ryan Gosse  to  Everyone : brb
+09:47:49 From  Ryan Gosse  to  Everyone : back
+10:03:48 From  naomi tress  to  Everyone : Demo IPT:http://129.173.48.161:8080/ipt/
+10:03:57 From  naomi tress  to  Everyone : OBIS Canada IPThttp://ipt.iobis.org/obiscanada/
+10:04:49 From  naomi tress  to  Everyone : PW de demo IPT est ‘workshop’
+10:06:12 From  Caroline Vanier  to  Everyone : Oui
+10:06:16 From  ThorneMa  to  Everyone : oui
+10:07:01 From  Virginie Roy  to  Everyone : oui
+10:07:44 From  Geneviève  to  Everyone : oui
+10:18:07 From  Jon Pye (OTN)  to  Everyone : https://www.dfo-mpo.gc.ca/science/data-donnees/obis/index-eng.html
+10:18:52 From  Jon Pye (OTN)  to  Everyone : le lien en question: https://obis.org/node/7dfb2d90-9317-434d-8d4e-64adf324579a
+10:19:31 From  Jon Pye (OTN)  to  Everyone : notez: entre le temps que j'ai pris ce printscreen et aujourd'hui, on a ajoute 1.5m donnees d'occurrence!
+10:19:47 From  Jon Pye (OTN)  to  Everyone : 2.5m*
+10:20:11 From  Jon Pye (OTN)  to  Everyone : Giovanni chaboto :)
+10:20:54 From  Sandra V  to  Everyone : :)
+10:21:34 From  Jon Pye (OTN)  to  Everyone : Merci, mais je sais aussi qu'on a tellement des donnees propres a OTN qu'on doit encore enregistrer :(
+10:22:21 From  Jon Pye (OTN)  to  Everyone : la maison que Mary Kennedy batissait :)
+10:25:00 From  claudenozeres  to  Everyone : Note: le plus grand portail de biodiversité mondial est GBIF (Global Biodiversity Information Facility). Les occurrences mis en OBIS sont aussi envoyés à GBIF, pour consultation par tous (y compris OGSL). l’IPT pour envoyer les données est un outil développé par GBIF, adopté par plusieurs comme OBIS. OBIS affiche plus des info. de caractère marin, ainsi pourquoi on le consulte (web ou robis).
+https://www.gbif.org/fr/
+https://www.gbif.org/fr/country/CA/summary
+10:27:03 From  Sandra V  to  Jon Pye (OTN)(Direct Message) : je ne peux pas acceder, avec le mot de passe workshop :(
+10:27:46 From  Jon Pye (OTN)  to  Sandra V(Direct Message) : essaie maintenant avec Y1MJCBOE
+10:28:19 From  Sandra V  to  Jon Pye (OTN)(Direct Message) : ohh yes!
+10:29:37 From  Jon Pye (OTN)  to  Everyone : essaie vous-memes de connecter avec vos comptes sur le 'test' IPT et laissez nous savoir si on y a des problemes: http://129.173.48.161:8080/ipt/votre compte c'est le courriel avec lequel vous avez register pour ce formation, et puis votre mot de passe devrait etre 'workshop'
+10:29:48 From  guenardg  to  Everyone : Pas capable de me logger. Quelle est le login?
+10:30:25 From  claudenozeres  to  Everyone : Extension: Simple Multimedia—pourrait insérer des liens (URLs) si vous avez des images affichées en ligne (dans mon cas, WoRMS photogallery ou iNaturalist). Sujet pour une autre fois.
+10:30:38 From  TURCOTTECH  to  Everyone : Je ne vois pas les resources dans manage resources, il n'y a rien?
+10:31:22 From  Jon Pye (OTN)  to  Everyone : les administrateurs peuvent voir tous les resources mais tu verra juste les resource que vous enregistre vous-memes et les resources publiques.
+10:31:39 From  TURCOTTECH  to  Everyone : Merci
+10:31:45 From  Jon Pye (OTN)  to  guenardg(Direct Message) : guillaume.guenard@dfo-mpo.gc.ca : workshop
+10:32:04 From  Jon Pye (OTN)  to  guenardg(Direct Message) : si ca ne marche pas je peux faire un ptit reset. :)
+10:34:58 From  guenardg  to  Jon Pye (OTN)(Direct Message) : Est-ce que'on peut "escape" le slash entre l'Anglais et le français? Sinon, on doit éviter les slashs?
+10:35:47 From  Jon Pye (OTN)  to  guenardg(Direct Message) : je pense que la forme accepte nos / je croix aussi qu'on peut commencer avec francais si on precise 'francais' comme langue des metadonnees en haut.
+10:36:43 From  Jon Pye (OTN)  to  guenardg(Direct Message) : si on registre nos metadonnees par main les formes echapperont nos caracteres pour nous
+10:42:27 From  Jon Pye (OTN)  to  Everyone : l'intention est de render vos donnees plus faciles a decouvrir, alors les details qu'on ajoute devrait servir ce but.
+10:42:40 From  Jon Pye (OTN)  to  Everyone : rendre*
+10:45:14 From  claudenozeres  to  Everyone : Même si plusieurs champs d’info ne sont pas obligatoires, c’est utile pour découvrir, comme disait Jon. AUSSI: pourrait servir de faire une article rapide, i.e., data paper dans un journal PenSoft, qui va auto-remplir par vos infos en IPT.
+10:46:49 From  Gabriel Leblanc  to  Everyone : Effectivement, suivant les principes directeurs FAIR, offrir le plus d'infos possible sur le jeu de données permet de favoriser la découvrabilité et augmente le potentiel de réutilisation de la donnée.
+10:46:55 From  Jon Pye (OTN)  to  Everyone : Oui, le EML.xml qui est genere par l'IPT est en bonne forme pour amener a Pensoft et registrer avec eux comme un 'data paper'. rappeler aussi que les citations automatiques, qui sont utilize si les donnes sont dirigees vers GBIF, se forment comme : {dataset.authors} ({dataset.pubDate}) {dataset.title}. [Version {dataset.version}]. {organization.title}. {dataset.type} Dataset {dataset.doi}, {dataset.url}
+10:48:33 From  Jon Pye (OTN)  to  Everyone : alors ce sont les metadonnees qui sont les plus importants pour creer la citation qu'on veut voir a GBIF.
+10:50:38 From  Jon Pye (OTN)  to  Everyone : si on a fait des changements mais on n'a pas encore publie, on peut prevoir notre prochaine version.
+10:52:26 From  Jon Pye (OTN)  to  Everyone : vous n'avons probablement pas cette option!
+11:00:48 From  Jon Pye (OTN)  to  Everyone : comme claude a dit, c'est GBIF qui maintient ces ressources la, le manuel et le section 'A propos'.
+11:02:22 From  guenardg  to  Jon Pye (OTN)(Direct Message) : Est-ce qu'il y a du code spécific en R pour générer les xml/eml? Sinon on peut toujours utiliser des packages génériques (XML2, etc.)
+11:02:36 From  claudenozeres  to  Everyone : https://www.openaire.eu/data-paper-the-data-publishing-project-of-pensoft
+11:02:50 From  claudenozeres  to  Everyone : https://www.gbif.org/data-papers
+11:04:43 From  Jon Pye (OTN)  to  guenardg(Direct Message) : c'est un project interessant, moi je ne sait pas pourquoi on n'a pas deja un ISO19115 -> EML.xml traducteur, par example. Je sait que Julie travaillait l'an dernier sur un templat eml.xml pour traducter tous les metadonnees dans le base des donnees OGSL.
+11:11:25 From  claudenozeres  to  Everyone : bon point, car parfois le monde publie et re-publie par des vues d’une base, vers l’IPT ou IOBIS.
+11:12:20 From  claudenozeres  to  Everyone : (nos relevés de pêche est un exemple—dans la passée, je ne sais pas si encore bon, ou aussi ‘cassé’ :)
+11:26:49 From  Jon Pye (OTN)  to  Everyone : c'est le cas avec nous, OTN fait des addendum et extensions aux projects de nos partenaires utilisant notre base de donnees come source authoritative, et c'est plus joli quand on peut les faire du facon automatique.
+11:27:15 From  Geneviève  to  Everyone : Je vais devoir vous quitter. Un grand merci pour toutes ces informations, excellente formation, très intéressant! 
+11:27:34 From  Jon Pye (OTN)  to  Everyone : merci de nous rejoinder, Genevieve!
+11:27:37 From  Jon Pye (OTN)  to  Everyone : rejoindre*
+11:28:02 From  claudenozeres  to  Everyone : Donc un avantage d’avoir des bases centralisées dans une institution—si des données à re-publier régulièrement.
+11:28:02 From  Geneviève  to  Everyone : si je peux me reconnecter plus tard, je reviendrai
+11:43:08 From  Jon Pye (OTN)  to  Everyone : la politique des donnees scientifiques pour MPO generalement: https://dfo-mpo.gc.ca/about-notre-sujet/publications/science/datapolicy-politiquedonnees/index-fra.html
+11:43:24 From  Jon Pye (OTN)  to  Everyone : je ne sais pas si il y a une version qui supercede celui-la
+11:45:02 From  ThorneMa  to  Everyone : C'est une version à jour en date de septembre 2020
+11:46:20 From  Virginie Roy  to  Everyone : pour accès par intranet https://intranet.ent.dfo-mpo.ca/mpo/fr/node/5950
+11:48:34 From  Gabriel Leblanc  to  Everyone : je confirme : innaccessible
+11:48:58 From  claudenozeres  to  Everyone : Gouvernement affiche ceci pour OpenData: https://ouvert.canada.ca/fr/licence-du-gouvernement-ouvert-canada
+11:49:06 From  claudenozeres  to  Everyone : Exemple: https://ouvert.canada.ca/data/fr/dataset/2dfa19db-a8cf-4460-97b9-710c2b856276
+11:51:48 From  claudenozeres  to  Everyone : HA!
+11:52:41 From  claudenozeres  to  Everyone : Bon exemple, Jon: ça prendrait une équipe
+11:53:44 From  ThorneMa  to  Everyone : @ Virginie: Richard Larocque c'est beaucoup battu pour ça sans jamais avoir gain de cause, malheureusement.  Si je peux t'aider a argumenter avec la gestion en ce sens, ça va me faire plaisir.
+11:53:49 From  claudenozeres  to  Everyone : ignorance. Les gestionnaires ne savent pas.
+11:54:06 From  Virginie Roy  to  Everyone : Merci M-L, nous avons besoin de ta voix !!
+11:54:11 From  ThorneMa  to  Everyone : Les gestionnaire savent. Ils ne veulent pas entendre...
+12:23:51 From  naomi tress  to  Everyone : https://join.slack.com/t/obiscanada/shared_invite/zt-o3bcqrrl-9INHhXV2lPBFiUSHB8qUTA
+12:24:45 From  Virginie Roy  to  Everyone : Rapport au greffier du Conseil privé : Feuille de route de la Stratégie de données pour la fonction publique fédérale : https://www.canada.ca/fr/conseil-prive/organisation/greffier/publications/strategie-donnees.html
+12:27:02 From  naomi tress  to  Everyone : "obis-ish"
+12:32:53 From  claudenozeres  to  Everyone : https://obis.org/dataset/ac2d9d3a-7d85-4b76-b68c-519559d59c63
+12:33:49 From  Virginie Roy  to  Everyone : je ne peux pas assister ce pm (conflit d'horaire avec une autre réunion), mais Claude va me faire un bon résumé je suis certaine ! Merci Claude ;-)
+12:44:15 From  TURCOTTECH  to  Everyone : A tantot!
+12:45:15 From  ThorneMa  to  Everyone : Je n'ai pas de base de donnée prête pour l'IPTC, mais j'aimerais voir comment mieu préparer les données avec Julie, ou sinon voir avec Isabelle un exemple avant/aprèst de ses bases de données non formaté vs prête pour diffusion.
+12:53:01 From  TURCOTTECH  to  Jon Pye (OTN)(Direct Message) : Hey Jon, j'ai eu à redémarrer mon ordinateur sinon il le faisait automatiquement dans 1 heure
+12:53:34 From  TURCOTTECH  to  Jon Pye (OTN)(Direct Message) : Pourrais-tu me retransmettre les liens pour la simulation IPT sur GBIF
+12:53:40 From  Jon Pye (OTN)  to  TURCOTTECH(Direct Message) : oui oui
+12:53:45 From  TURCOTTECH  to  Jon Pye (OTN)(Direct Message) : SVP?
+12:53:48 From  Jon Pye (OTN)  to  TURCOTTECH(Direct Message) : http://129.173.48.161:8080/
+12:53:55 From  Jon Pye (OTN)  to  TURCOTTECH(Direct Message) : celui la est le IPT teste
+12:54:14 From  Jon Pye (OTN)  to  TURCOTTECH(Direct Message) : http://ipt.iobis.org/obiscanada/
+12:54:17 From  Jon Pye (OTN)  to  TURCOTTECH(Direct Message) : l'officiel
+12:55:13 From  TURCOTTECH  to  Jon Pye (OTN)(Direct Message) : Oops j'arrivais a me logger tantot mais ca me met un message d'erreur maintenant?
+12:55:37 From  TURCOTTECH  to  Jon Pye (OTN)(Direct Message) : Tomcat home page?
+12:56:03 From  Jon Pye (OTN)  to  TURCOTTECH(Direct Message) : whoops, moment
+12:56:13 From  Jon Pye (OTN)  to  TURCOTTECH(Direct Message) : http://129.173.48.161:8080/ipt/
+12:56:19 From  TURCOTTECH  to  Jon Pye (OTN)(Direct Message) : Je crosiq ue cest un manager link
+12:56:34 From  TURCOTTECH  to  Jon Pye (OTN)(Direct Message) : Voila merci!
+12:56:38 From  TURCOTTECH  to  Jon Pye (OTN)(Direct Message) : A tantôt!
+12:56:41 From  TURCOTTECH  to  Jon Pye (OTN)(Direct Message) : Bon appétit
+12:56:47 From  Jon Pye (OTN)  to  TURCOTTECH(Direct Message) : a tantot!
+14:02:46 From  Sandra V  to  Everyone : Moi aussi comme Marilyn
+14:03:41 From  TURCOTTECH  to  Everyone : Oui
+14:03:42 From  Caroline Vanier  to  Everyone : oui
+14:04:13 From  guenardg  to  Jon Pye (OTN)(Direct Message) : I am here.
+14:04:16 From  Valérie Cypihot  to  Everyone : je suis de retour
+14:08:39 From  Jon Pye (OTN)  to  Everyone : https://join.slack.com/t/obiscanada/shared_invite/zt-o3bcqrrl-9INHhXV2lPBFiUSHB8qUTA
+14:08:51 From  Maria Cornthwaite  to  Everyone : maria.cornthwaite@dfo-mpo.gc.ca
+14:09:07 From  Maria Cornthwaite  to  Everyone : obiscanada@dfo-mpo.gc.ca
+14:27:15 From  Pauline Chauvet  to  Everyone : https://ror.org/
+14:27:24 From  Pauline Chauvet  to  Everyone : ceci pourrait aider
+14:29:32 From  Jon Pye (OTN)  to  Everyone : pour institutionID c'est genial, mais ca serait bon de standardizeer comment nous appeler dans institutionName aussi
+14:31:58 From  Julie Dionne  to  Everyone : Techniquement le ROR donne l'id et le nom qui doit être utilisé… mais c'est presque toujours en anglais. Comme pour Pêches et Océans Canada… dans ROR it's Fisheries and Ocean Canada.
+14:34:20 From  Caroline Vanier  to  Everyone : No question, thanks Maria!
+14:35:49 From  Caroline Vanier  to  Everyone : Celle de Claude
+14:35:56 From  claudenozeres  to  Everyone : ThanksMaria!
+14:36:01 From  TURCOTTECH  to  Everyone : Thanks
+14:36:12 From  Laurie Isabel (MPO Sciences)  to  Everyone : J'ai le jeu de données du Teleost sur lequel on pourrait travailler pour créer un autre groupe.
+14:36:43 From  TURCOTTECH  to  Everyone : Je serais intéressé par le jeu Teleost aussi si jamais
+14:37:12 From  Gabriel Leblanc  to  Everyone : Pour ma part, je quitte. On se voit demain!
+14:37:57 From  Valérie Cypihot  to  Everyone : avec le teleost je pense bien!
+14:49:27 From  Jon Pye (OTN)  to  Everyone : https://github.com/tdwg/dwc-for-biologging
+14:49:52 From  Jon Pye (OTN)  to  Everyone : https://github.com/tdwg/dwc-for-biologging/wiki/Metadata-guidelines
+14:58:14 From  Jon Pye (OTN)  to  naomi tress(Direct Message) : just got a note from laurie's room, they need help
+15:23:50 From  Jon Pye (OTN)  to  Everyone : c'est un bon exercise pour tout le monde, comment trouver la combination unique pour notre jeu de donnees
+15:25:09 From  Jon Pye (OTN)  to  Everyone : beaucoup d'institutions inclus leur nom dans les eventid, e.g.: INBO:VIS:Ev:00009375  ou  otn:DAL:NSBS:NSBS-Hops:20170722053000-release
+15:47:54 From  claudenozeres  to  Everyone : Salut! De faire pour l’IPT est un travail d’équipe souvent—c’est pourquoi il pourrait avoir plusieurs noms associés dans la citation: source, metadata editor, contact, data person…à l’IML (et Laval :), on pourrait se rencontrer après l’atelier encore pour s’aider entre nous et faire sortir les données!
+15:52:48 From  Laurie Isabel (MPO Sciences)  to  Everyone : Bien d'accord avec toi Claude! On organisera une rencontre prochainement.
+16:08:20 From  Jon Pye (OTN)  to  Everyone : verbatimTaxonRank
+16:08:24 From  Jon Pye (OTN)  to  Everyone : https://dwc.tdwg.org/terms/#dwc:verbatimTaxonRank
+16:20:19 From  Laurie Isabel (MPO Sciences)  to  Everyone : http://ipt.iobis.org/obiscanada/resource?r=dfo_quebec_groundfish
+16:26:18 From  Jon Pye (OTN)  to  Everyone : https://ogsl.ca/en/taxonomic-list/
+16:27:30 From  Jon Pye (OTN)  to  Everyone : https://github.com/claudenozeres/Taxon-IML
+16:31:11 From  Jon Pye (OTN)  to  Everyone : ../../ ?
+16:58:04 From  Ryan Gosse  to  Everyone : ryan.gosse@dal.ca
+16:59:34 From  ThorneMa  to  Everyone : Merci, à demain
+16:59:37 From  Isabelle  to  Everyone : bye!!!
+16:59:40 From  Caroline Vanier  to  Everyone : merci à demain
+17:04:59 From  Jon Pye (OTN)  to  Everyone : if you remove the gossages, Ryan, could we say you de-gossed it?

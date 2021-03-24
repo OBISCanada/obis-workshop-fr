@@ -1,0 +1,177 @@
+09:26:06 From  Brian Jones (OTN)  to  Everyone : https://github.com/otn-workshops/obis-workshop-fr/issues/6
+09:38:32 From  Jon Pye (OTN)  to  Everyone : je vais prendre un moment pour verifier que mes enfants n'a rien detruit :)
+09:45:11 From  Jon Pye (OTN)  to  Everyone : https://github.com/otn-workshops/obis-workshop-fr
+09:45:19 From  Jon Pye (OTN)  to  Everyone : https://github.com/otn-workshops/obis-workshop-fr/blob/master/Horaire.docx
+09:53:25 From  Jon Pye (OTN)  to  Everyone : Si vous avez des problemes avec les installations R ou rien d'autre, nous sommes ici pour vous aider chaque jour pour 1h avant qu'on commence l'atelier, :)
+09:54:14 From  Valérie Cypihot  to  Everyone : Le lien pour installer les packages (https://github.com/otn-workshops/obis-workshop-fr/blob/master/rmd-files/install_packages.Rmd) ne fonctionne pas pour moi!
+09:54:50 From  Jon Pye (OTN)  to  Everyone : https://github.com/otn-workshops/obis-workshop-fr/blob/master/fichiers_Rmarkdown/installez_packages.Rmd
+09:55:08 From  Valérie Cypihot  to  Everyone : Parfait!
+09:59:58 From  Jon Pye (OTN)  to  Everyone : Si vous ne l'avez pas deja, R et R Studio sont tous les deux disponible par le portail de logiciels du MPO.
+10:16:02 From  Jon Pye (OTN)  to  Everyone : Trouvez l'horaire et les materiaux pour l'atelier ici: https://github.com/otn-workshops/obis-workshop-fr
+10:21:42 From  claudenozeres  to  Everyone : Photo affichée vient de NASA MODIS, PVI
+10:22:49 From  claudenozeres  to  Everyone : Exemples: https://visibleearth.nasa.gov/images/115675/ice-at-the-mouth-of-the-st-lawrence-river
+10:22:50 From  claudenozeres  to  Everyone : https://visibleearth.nasa.gov/images/95274/gulf-of-st-lawrence-quebec-canada
+10:27:58 From  claudenozeres  to  Everyone : …et données creditées (sur OBIS). Le plus important.
+10:29:24 From  claudenozeres  to  Everyone : 1,5 million publiés par Maritimes la semaine passée! https://obis.org/dataset/7b6fa45f-e4fd-4e40-a537-97eb2f63c690
+10:29:53 From  Jon Pye (OTN)  to  Everyone : je n'ai pas encore vu ca! c'est super!
+10:31:28 From  Jon Pye (OTN)  to  Everyone : 4 million MeasurementOrFact avec les 1.5m donnees, wow.
+10:32:52 From  claudenozeres  to  Everyone : Oui, c’est un très bon exemple de MoF dans les données!
+10:43:27 From  Jon Pye (OTN)  to  Everyone : la presentation (et les liens!) est disponible sur le site GitHub aussi: https://github.com/otn-workshops/obis-workshop-fr/blob/master/01_Introduction_a_OBIS.pptx
+10:45:41 From  TURCOTTECH  to  Everyone : Très clair merci!
+10:45:45 From  Jon Pye (OTN)  to  Everyone : on peut lever la main avec nos 'reactions', on peut parler ici dans le chat, comme vous voulez!
+10:47:17 From  Jon Pye (OTN)  to  Everyone : http://www.marinespecies.org/
+10:48:57 From  Jon Pye (OTN)  to  Everyone : desole si on ne peut pas voir les DOI et les citations, mais au moins on peut les trouver sur le PPT disponible sur le site GH!
+10:49:51 From  claudenozeres  to  Everyone : CaRMS est la base thématique canadien (je suis un rédacteur).
+10:50:22 From  claudenozeres  to  Everyone : Le monde pourrait mettre des photos des taxons: http://www.marinespecies.org/carms/photogallery.php
+10:51:06 From  Pauline Chauvet  to  Everyone : Merci Claude, je mets le lien dans le ppt =)
+10:51:48 From  claudenozeres  to  Everyone : CaRMS photogallery—seulement ceux du Canada (vs WoRMS photogallery—pas de Caraïbe :)
+10:52:03 From  claudenozeres  to  Everyone : Autre utilité: Checklists, comme du St-Laurent: http://www.marinespecies.org/carms/checklist.php
+10:53:01 From  claudenozeres  to  Everyone : Un éditeur régional—mais c’est un point de contact, je ne modifie pas les taxons (sont les rôles des experts pour les taxons).
+10:55:57 From  claudenozeres  to  Everyone : distribution en WoRMS (polygones proposés par les éditeurs) affiche aussi les occurrences d’OBIS (carrés verts).
+10:57:10 From  Jon Pye (OTN)  to  Everyone : oui ca nous permet les verifications omnidirectionelles quand tous les deux ont des idees de distribution geographique.
+10:57:37 From  claudenozeres  to  Everyone : exactement!
+10:58:07 From  claudenozeres  to  Everyone : La fameuse reptile marine ;)
+10:58:52 From  Jon Pye (OTN)  to  Everyone : si on peut afficher un tag, ils devraient afficher un donnee :)
+10:59:21 From  claudenozeres  to  Everyone : (en générale, eaux douces sont en ITIS—un autre système, surtout pour terrestre. On préfère d’ajouté à WoRMS car c’est géré par des taxonomistes mondialement.
+10:59:51 From  claudenozeres  to  Everyone : (ITIS est USDA—emphase américain)
+11:00:02 From  Jon Pye (OTN)  to  Everyone : http://www.marinespecies.org/aphia.php?p=webservice
+11:00:34 From  claudenozeres  to  Everyone : pourrait appeler WoRMS aussi en R (worrms, taxize…)
+11:00:59 From  Jon Pye (OTN)  to  Everyone : et ca marche encore en Python avec pyworms
+11:01:16 From  Jon Pye (OTN)  to  Everyone : mais c'est probablement un sujet pour un autre atelier :)
+11:02:14 From  claudenozeres  to  Everyone : importance de WoRMS: l’espèce affichait s’appelle oursin vert
+11:02:25 From  claudenozeres  to  Everyone : PAS le même ‘oursin vert’ du Canada!
+11:02:48 From  Pauline Chauvet  to  Everyone : les joies des noms vernaculaires
+11:03:39 From  Jon Pye (OTN)  to  Everyone : Caraibes, Galapagos, l'Atlantique du nord, Mediterranee… l'oursin vert sait se demenager!
+11:04:59 From  claudenozeres  to  Everyone : :)
+11:05:00 From  Jon Pye (OTN)  to  Everyone : j
+11:06:00 From  claudenozeres  to  Everyone : Je vois voir un track de phoque gris d’ile Sable! ;)
+11:06:22 From  claudenozeres  to  Everyone : (*veux)
+11:06:24 From  Jon Pye (OTN)  to  Everyone : je na pas eu grand chance de l'utiliser avant qu'on enseigne les ateliers OBIS, mais maintenant j'aime https://mapper.obis.org pour fair l'exploration des donnees disponibles.
+11:12:02 From  Jon Pye (OTN)  to  Everyone : https://www.dal.ca/faculty/science/news-events/news/2015/10/28/researchers_observe_the_american_eels__mysterious_migration_to_the_saragasso_sea.html plus d'information sur les migrations des anguilles et la recharge du Martin Castonguay et ses collegues.
+11:12:18 From  Jon Pye (OTN)  to  Everyone : https://www.nature.com/articles/ncomms9705
+11:29:06 From  Jon Pye (OTN)  to  Everyone : recherche* autocorrecte reste firmament en Anglais :)
+11:31:20 From  Geneviève  to  Everyone : de retour ici :)
+11:31:25 From  Caroline Vanier  to  Everyone : prête pour la suite!
+11:31:34 From  TURCOTTECH  to  Everyone : Prêt
+11:32:58 From  claudenozeres  to  Everyone : https://dwc.tdwg.org/terms/
+11:34:39 From  Jon Pye (OTN)  to  Everyone : une important page du reference, aujourd'hui et en futur :)
+11:35:55 From  Jon Pye (OTN)  to  Everyone : cherchons le carte de bingo :)
+11:39:49 From  claudenozeres  to  Everyone : Exemple d’un autre standard que DwC: ABCD, mieux connu en musées pour les spécimens. https://www.tdwg.org/standards/abcd/
+11:43:24 From  Jon Pye (OTN)  to  Everyone : des standards sont comme les brosses a dents. tous le monde est d'accord qu'ils sont importants, tous le monde veut qu'on les utilisent, mais c'est difficile a convaincre la monde d'utiliser la votre. :)
+11:44:04 From  Sandra V  to  Everyone : :)
+11:48:36 From  Jon Pye (OTN)  to  Everyone : https://dwc.tdwg.org/terms/
+11:48:59 From  Jon Pye (OTN)  to  Everyone : n'importe quand j'entend 'guide rapide' je vais re-afficher la lien :)
+11:53:30 From  Gabriel Leblanc (OGSL)  to  Everyone : À l'OGSL, on recommande de plus en plus l'utilisation du terme "TaxonRank". Pour les raisons exposées par Julie!
+12:00:33 From  Pauline Chauvet  to  Everyone : https://dwc.tdwg.org/terms/#dwc:typeStatus
+12:01:05 From  Virginie Roy  to  Everyone : dans le Darwin Core, est-ce qu'il y a un champs pour décrire un indice de qualité de l'identification, ou un champs pour désigner si une vérification de l'identification a été réalisée par une autre personne ?
+12:01:33 From  Virginie Roy  to  Everyone : c'Est que le taxon d'origine inscrit est peut-être faux
+12:02:52 From  claudenozeres  to  Everyone : Oui, mais sont pas des termes obligatoires. Exemples des termes: http://rs.tdwg.org/dwc/terms/identifiedBy, 	http://rs.tdwg.org/dwc/terms/identificationVerificationStatus
+12:03:25 From  Virginie Roy  to  Everyone : super !
+12:03:49 From  claudenozeres  to  Everyone : identificationVerificationStatus: A categorical indicator of the extent to which the taxonomic identification has been verified to be correct.
+12:04:33 From  claudenozeres  to  Everyone : absent est un cas spécial—pas à utiliser pour tous (contraire à ceux qu’on voit on OGSL).
+12:05:18 From  Virginie Roy  to  Everyone : Oui, ne pas appliquer aveuglément la pratique d'afficher des 0 (absences) dans les BD.
+12:05:38 From  claudenozeres  to  Everyone : institutionCode = MLI_MLI = Institut Maurice-Lamontagne
+12:07:04 From  claudenozeres  to  Everyone : Aussi EMDO code: 4160 https://edmo.seadatanet.org/report/4160
+12:08:50 From  claudenozeres  to  Everyone : MarineRegions est plus océanographique. Pour le géographie (baies, rivières etc): https://www.nrcan.gc.ca/earth-sciences/geography/querying-canadian-geographical-names-database/9170
+12:11:31 From  claudenozeres  to  Everyone : minimum et maximumdepthinmeters sont importants à inscrire car pourrait avoir un verbatimDepth, ou un depth venant du World Atlas ou IODC, etc (selon coordonnées) affiché aussi.
+12:13:25 From  Gabriel Leblanc (OGSL)  to  Everyone : Les virgules peuvent occasionner certains problèmes lorsqu'un fichier est transféré en format CSV ou ramené d'un format CSV vers un autre format (xlsx, par exemple).
+12:14:52 From  naomi tress  to  Everyone : https://obis.org/maptool/ l'utile pour construire un WKT
+12:17:31 From  claudenozeres  to  Everyone : Je suggère ni virgules ni des caractères spéciaux (accents) en fichier des données (mieux des mettre en métadonnées). Permis, mais souvent n’affiche pas bien entre systèmes.
+12:18:44 From  Gabriel Leblanc (OGSL)  to  Everyone : Oui, à l'OGSL, on encourage fortement les personnes qui nous partagent des données à ne pas utiliser de caractères spéciaux. Une variable "Taille (m)" pourrait prendre la forme suivante : taille_en_metre, par exemple.
+12:18:58 From  Gabriel Leblanc (OGSL)  to  Everyone : _ et - ne sont pas considérés comme des caractères spéciaux.
+12:23:37 From  Valérie Cypihot  to  Everyone : Donc on utilise le format intervalle plutôt que de faire 2 colonnes séparées pour timestart et timeEnd?
+12:23:52 From  naomi tress  to  Everyone : utilise un /
+12:24:02 From  naomi tress  to  Everyone : timestart/timeEnd
+12:24:48 From  Valérie Cypihot  to  Everyone : super merci!
+12:26:33 From  Gabriel Leblanc (OGSL)  to  Everyone : depuis 2015, si je ne me trompe pas
+12:28:04 From  Jon Pye (OTN)  to  Everyone : de Pooter et al etait 2017 mais c'etait en developpement bien avant ca.
+12:28:07 From  naomi tress  to  Everyone : aussi l'information d'equipment -mesh size (tow net size)-vitesse du navire-duration du 'tow'
+12:29:20 From  Jon Pye (OTN)  to  Everyone : map tool est maintenant -> https://obis.org/maptool/#
+12:29:32 From  claudenozeres  to  Everyone : Pas obligatoire pour publier sur OBIS, mais est le cas pour les données du gouvernement du Canada: 
+license: http://creativecommons.org/licenses/by/4.0/legalcode
+rightsHolder: Her Majesty the Queen in right of Canada, as represented by the Minister of Fisheries and Oceans
+institutionID: http://www.seadatanet.org/urnurl/SDN:EDMO::4160 (pour l’IML).
+12:30:08 From  Jon Pye (OTN)  to  Everyone : Quiz: https://mybinder.org/v2/gh/otn-workshops/obis-workshop-fr/HEAD?filepath=Quiz/notebooks/DwC%20Quiz.ipynb
+12:31:34 From  Jon Pye (OTN)  to  Everyone : ils me dit toujours d'arreter du parler quand on fait les quiz :)
+12:33:42 From  Virginie Roy  to  Everyone : j'aimerais poser une question générale sur les présentations de ce matin
+12:38:14 From  ThorneMa  to  Everyone : Très bon point Virginie
+12:40:59 From  Jon Pye (OTN)  to  Everyone : oui, on ne doit pas tout faire tout seul, mais on peut gagner du precision qui va simplifier les defis aux etapes suivantes.
+12:41:51 From  ThorneMa  to  Everyone : De mon côté le quiz ne s'affiche pas
+12:42:17 From  claudenozeres  to  Everyone : Sont des bons points—il est utile pour exposer le monde aux concepts, et en sachant que les diffuseurs vont vous aider à formatter tous les champs pour publication.
+12:42:28 From  ThorneMa  to  Everyone : Ça marche merci :)
+12:53:57 From  Jon Pye (OTN)  to  Everyone : ce n'est pas la seul cas ou le passage du temps va me preuver correcte!
+12:54:33 From  Pauline Chauvet  to  Everyone : =)
+12:56:05 From  Jon Pye (OTN)  to  Everyone : ou bien le gazetteer canadien que Claude nous ont montrer
+12:56:22 From  Jon Pye (OTN)  to  Everyone : https://www.nrcan.gc.ca/earth-sciences/geography/querying-canadian-geographical-names-database/9170
+12:56:49 From  Jon Pye (OTN)  to  Everyone : on est en train de amener du l'eau fraiche a OBIS mais c'est un proces!
+13:05:26 From  Pauline Chauvet  to  Everyone : Je sais que parmi vous, certains travaillent avec des données d'imagerie. Cet article pourrait vous intéresser.https://www.frontiersin.org/articles/10.3389/fmars.2021.620702/full#F2
+13:05:56 From  claudenozeres  to  Everyone : Merci Pauline!
+13:05:56 From  ThorneMa  to  Everyone : Merci :)
+13:06:09 From  Geneviève  to  Everyone : Merci beaucoup Pauline!
+13:07:31 From  Geneviève  to  Everyone : désolée Naomi, j'ai mal entendu la question? ça concernait l'installation des packages R?
+13:08:42 From  naomi tress  to  Everyone : retournee a 12:30 si vous voulez avoir d'aide avec d'installation des program et package pour demains
+13:34:11 From  Jon Pye (OTN)  to  Everyone : install.packages('callr')
+13:35:06 From  Jon Pye (OTN)  to  Everyone : on verra si on peut installer les dependences du facon manuel
+13:39:00 From  Jon Pye (OTN)  to  Everyone : install.packages('processx')
+13:39:02 From  claudenozeres  to  Everyone : Est-ce que la version R est un enjeu? Sandra est en 3.4. Je suis en v.4
+13:39:39 From  naomi tress  to  Everyone : est-ce qu'il ya des autres gens besoin d'aide pour demain?
+13:41:33 From  Jon Pye (OTN)  to  Everyone : c'est possible qu'on a besoin de R minimum 4.x, mois je suis sur 4.0.3
+13:43:53 From  Jon Pye (OTN)  to  Everyone : je pense que la portail MPO peuvent installer R 4.x , si il y a des trucs pour ca j'ai aucun experience direct avec le portail :(
+13:44:31 From  Jon Pye (OTN)  to  Everyone : 3.4.3 c'etait en 2017.
+13:48:03 From  TURCOTTECH  to  Everyone : library(rnaturalearth)Error in library(rnaturalearth) :   aucun package nommé ‘rnaturalearth’ n'est trouvé> library(rnaturalearthdata)Error in library(rnaturalearthdata) :   aucun package nommé ‘rnaturalearthdata’ n'est trouvé> library(geosphere)Error in library(geosphere) :   aucun package nommé ‘geosphere’ n'est trouvé> library(stringr)> library(readr)> library(leaflet)> library(robis)> library(obistools)Error in library(obistools) :   aucun package nommé ‘obistools’ n'est trouvé> library(finch)Error in library(finch) : aucun package nommé ‘finch’ n'est trouvé
+13:53:10 From  Pauline Chauvet  to  Everyone : install_github("iobis/robis")
+13:59:41 From  Jon Pye (OTN)  to  Everyone : on peut faire devtools::find_rtools(T) pour voir si on a RTools proprement installee
+14:01:10 From  naomi tress  to  Everyone : si vous n'etes pas la dit 'aye'
+14:03:06 From  Virginie Roy  to  Everyone : sur l'heure du midi je suivais en parallèle un autre atelier de gestion de données par Québec-Océan et ils parlent de l'importance que chaque projet de recherche se définisse un Plan de gestion de données, maintenant la norme canadienne pour cela est https://portagenetwork.ca/
+14:03:08 From  Jon Pye (OTN)  to  Everyone : si c'est apprendre comment faire tout ca ou revenir a l'aeroport, moi je sais ce que je veux faire.
+14:03:52 From  Jon Pye (OTN)  to  Everyone : Ah Portage, nous sommes des partenaires-du-partenaires avec notre collaboration avec CIOOS.
+14:04:53 From  Virginie Roy  to  Everyone : Donc important de spécifier pour un projet X à quelles étapes on aura besoin de DwC, OBIS, OGSL, etc. !!
+14:05:52 From  claudenozeres  to  Everyone : Portage est une bonne place avec des ressources pour préparer et archiver les données—des leçons pour nous. Une différence, que je vois, est qu’ici notre but est une diffusion mondiale sur portail ouvert de découverte (comme Canadensys/GBIF), pas simplement d’archiver reégionalement (comme font OpenData Canada, OGSL-CIOOS).
+14:06:55 From  naomi tress  to  Everyone : Source: De Pooter et al (2017). https://doi.org/10.3897/BDJ.5.e10989​
+14:08:08 From  naomi tress  to  Everyone : mission
+14:17:55 From  claudenozeres  to  Everyone : https://vocab.nerc.ac.uk/search_nvs/
+14:18:01 From  Jon Pye (OTN)  to  Everyone : ils ont recemment relacher un nouveau portail… oui :)
+14:18:03 From  Jon Pye (OTN)  to  Everyone : https://vocab.nerc.ac.uk/search_nvs/
+14:18:14 From  claudenozeres  to  Everyone : :)
+14:19:59 From  Jon Pye (OTN)  to  Everyone : une autre developpement nouveau, une gestiare de donnees specifique pour tous les measurementOrFact, et leurs types qui existe deja sur OBIS: https://mof.obis.org/
+14:31:11 From  Virginie Roy  to  Everyone : Participants du MPO-IML : qui est (organisation ou personne) notre contact ressource (questions, conseils) pour support avec DwC à l'échelle de l'IML, sinon pour le MPO en général ?
+14:32:08 From  naomi tress  to  Everyone : c'est Maria Cornthwaite pour mpo en general ?
+14:32:42 From  Jon Pye (OTN)  to  Everyone : Pour DFO-MPO / OBIS Canada, je pense que oui.
+14:33:32 From  Virginie Roy  to  Everyone : Et dans notre institut MPO à l'IML, n'y-a-t-il personne comme un "regional node" ??
+14:34:05 From  Jon Pye (OTN)  to  Everyone : il y a un communaute pour OBIS-Canada aussi qui serait un bon ressource pour les questions de format de donnees, choisir un schema, des particuliers du methode de collection d'information.
+14:34:14 From  ThorneMa  to  Everyone : A ma connaissance il n'y a personne à L'IML
+14:34:41 From  naomi tress  to  Everyone : peut etre claude (lol)
+14:35:02 From  Jon Pye (OTN)  to  Everyone : du sens super-officiel peut-etre pas, mais vous avez des experts dans la region, il est sur.
+14:35:09 From  Sandra V  to  Everyone : Caroline Lafleur?
+14:36:37 From  claudenozeres  to  Everyone : Julie, je ne vois pas des citations dans les données affichées comme exemples?
+14:39:08 From  Virginie Roy  to  Everyone : Ça démontre qu'on aurait besoin de savoir concrètement qui sont nos ressources IML et au Canada dans le vaste monde de la gestion de données. Nous devrions nous faire une liste (ou la DAISS devrait le faire cette liste de ressources pour établir cela de manière standardisée pour les Sciences à l'IML.
+14:39:56 From  Virginie Roy  to  Everyone : Je dois quitter malheureusement, mais à demain matin !
+14:40:15 From  Caroline Vanier  to  Everyone : Je note ta suggestion Virginie.
+14:41:55 From  naomi tress  to  Everyone : une resource, OBISCanada slack, et slack est une programme disponible des MPOhttps://join.slack.com/t/obiscanada/shared_invite/zt-o3bcqrrl-9INHhXV2lPBFiUSHB8qUTA
+15:02:54 From  Jon Pye (OTN)  to  Everyone : on as des groupes en train de decider comment integrer les nouvelles facons de determiner la presence du biodiversite dans OBIS. Le group genetique ont recemment convenu et leur GitHub se trouvent ici: https://github.com/iobis/Project-team-Genetic-Data/issues
+15:02:57 From  claudenozeres  to  Everyone : La plupart qu’on fait/développe ici sont des données environnementales et mesures associés. À venir seront les séquences (génétiques) et images associées.
+15:04:37 From  Jon Pye (OTN)  to  Everyone : moi je m'en occupe avec un groupe qui determinent comment classifier les measurements qui ont basisOfRecord: machineObservation  https://www.tdwg.org/community/mobs/
+15:05:56 From  Jon Pye (OTN)  to  Everyone : et on retient la precision comme ca aussi.
+15:11:03 From  Jon Pye (OTN)  to  Everyone : https://mybinder.org/v2/gh/otn-workshops/obis-workshop-fr/HEAD?filepath=Quiz/notebooks/Data%20Formats%20Quiz.ipynb
+15:12:49 From  claudenozeres  to  Everyone : Question liée avec ce que Virginie demandé—est-il des procédures pour valider les noms en données? Je vois dans ton exemple ‘Gammaridae’. C’était ça en verbatim ou autre chose?...
+15:49:30 From  Jon Pye (OTN)  to  Everyone : 3 fichiers pour la premier, event core, occ extension, emof extension.  puis on ajoute un meta.xml pour les mappages et un eml.xml pour le metadata du niveau project.
+16:01:00 From  naomi tress  to  Everyone : sondage de reaction: https://forms.gle/QZ4ctTYLETgfU9xP8
+16:01:12 From  Sandra V  to  Jon Pye (OTN)(Direct Message) : Pourrais tu me nommer les packages à installer pour verifier si on a tout?
+16:01:51 From  Jon Pye (OTN)  to  Sandra V(Direct Message) : certainement, il y a une liste ici: https://github.com/otn-workshops/obis-workshop-fr/blob/master/fichiers_Rmarkdown/installez_packages.Rmd
+16:03:07 From  Isabelle  to  Everyone : Est-ce qu'on peut avoir les présentations de la journée svp?
+16:03:15 From  Jon Pye (OTN)  to  Everyone : Oui! ils sont ici:
+16:03:22 From  Jon Pye (OTN)  to  Everyone : https://github.com/otn-workshops/obis-workshop-fr
+16:03:28 From  Jon Pye (OTN)  to  Everyone : 01, 02, et 03
+16:04:56 From  naomi tress  to  Everyone : je prefer la zip, et toute la code r pour demain et la aussi
+16:06:53 From  Benjamin Grégoire  to  Everyone : Merci!
+16:06:56 From  Valérie Cypihot  to  Everyone : Merci! À demain!!
+16:07:02 From  Caroline Vanier  to  Everyone : Merci et à demain!
+16:07:06 From  LEVESQUEI  to  Everyone : Merci!
+16:07:12 From  ThorneMa  to  Everyone : Merci
+16:07:13 From  Laurie Isabel (MPO Sciences)  to  Everyone : merci, à demain!
+16:09:10 From  naomi tress  to  Everyone : je retourne
+16:11:13 From  Jon Pye (OTN)  to  Everyone : install.packages('ropensci/finch') c'est l'autre?
+16:19:55 From  Jon Pye (OTN)  to  Everyone : https://cran.r-project.org/bin/windows/Rtools/
+16:30:35 From  Jon Pye (OTN)  to  Everyone : https://github.com/ocean-tracking-network/obis-workshop/blob/master/rmd-files/2_data_qc.Rmd
+17:02:20 From  Jon Pye (OTN)  to  Everyone : "You can override which version of R is used via General panel of the RStudio Options dialog"
+17:05:30 From  Jon Pye (OTN)  to  Everyone : https://rstudio.github.io/packrat/

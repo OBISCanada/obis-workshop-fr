@@ -1,0 +1,206 @@
+09:08:58 From  Jon Pye (OTN)  to  Everyone : https://github.com/otn-workshops/obis-workshop-fr
+09:09:30 From  Jon Pye (OTN)  to  Everyone : https://github.com/otn-workshops/obis-workshop-fr/blob/master/01_Introduction_a_OBIS.pptx
+09:09:46 From  Jon Pye (OTN)  to  Everyone : https://github.com/otn-workshops/obis-workshop-fr/blob/master/02_%20Introduction_a_DarwinCore.pptx
+09:10:08 From  Jon Pye (OTN)  to  Everyone : il y a les liens qui dit 'Download' a chaque page de PPT
+09:10:16 From  Jon Pye (OTN)  to  Everyone : https://github.com/otn-workshops/obis-workshop-fr/archive/master.zip
+09:18:01 From  Jon Pye (OTN)  to  Everyone : https://ogsl.ca/fr/biodiversite-especes-envahissantes-mpo-eae-information-sur-les-donnees/
+09:26:34 From  Jon Pye (OTN)  to  Everyone : https://www.burns-stat.com/pages/Tutor/R_inferno.pdf
+10:05:53 From  Ryan Gosse  to  Everyone : https://gitlab.oceantrack.org/GreatLakes/glatos
+10:08:38 From  Julie Dionne  to  Everyone : Je remets ici l'emplacement pour les document et powerpoint
+10:08:46 From  Julie Dionne  to  Everyone : https://github.com/otn-workshops/obis-workshop-fr
+10:13:36 From  Pauline Chauvet  to  Everyone : https://obis.org/manual/eml/
+10:26:36 From  claudenozeres  to  Everyone : Exemple d’un data paper. Pourrait être occurrences—ou même un checklist simple. https://bdj.pensoft.net/article/62812/
+10:29:19 From  claudenozeres  to  Everyone : Exemple de liste simple sur OBIS: https://obis.org/dataset/ac2d9d3a-7d85-4b76-b68c-519559d59c63
+10:29:49 From  claudenozeres  to  Everyone : NOTE: les jeux des données publiées en OBIS et GBIF sont indexés en Google. Recherchable.
+10:30:33 From  claudenozeres  to  Everyone : OBIS ne stock pas des photos, mais ferait des liens. CMN (Ottawa) par exemple, affiche des liens pour photos stockés.
+10:31:18 From  Jon Pye (OTN)  to  Everyone : ah c'est bon de savoir ca, les europeens utilize Agouti mais si on a qq chose nationale, c'est mieux.
+10:31:42 From  claudenozeres  to  Everyone : Exemple avec images (parfois, pour spécimens) par CMN: https://www.gbif.org/dataset/b50dfef4-3f34-4829-9d6e-edd5fcdb2b29
+10:33:13 From  claudenozeres  to  Everyone : OBIS peut contenir l’URL vers l’image; GBIF va afficher aussi.
+10:33:27 From  claudenozeres  to  Everyone : (pas affiché image en OBIS encore)
+10:35:04 From  Jon Pye (OTN)  to  Everyone : https://github.com/iobis/obis-issues/issues/170  il y a peut-etre des conversations relevants sur le iobis GH repositoire, on peut chercher quelques termes qui decrit nos problemes ou on peut ajouter nos propres Issues et commencer de nouveau une conversation avec les informaticiens OBIS.
+10:40:54 From  Jon Pye (OTN)  to  Everyone : hier on a rempli la disque virtuelle pour le IPT OBIS Canada, on devrait appeler au Pieter pour nous accorder plus de disque :)
+10:41:05 From  Jon Pye (OTN)  to  Everyone : c'est bien de momentum la
+10:41:17 From  Julie Dionne  to  Everyone : https://tools.gbif.org/dwca-validator/extension.do?id=gbif:Multimedia
+10:41:19 From  claudenozeres  to  Everyone : Whoo-hoo!
+10:41:45 From  Julie Dionne  to  Everyone : http://web.archive.org/web/20080225232621/http://www.dartmouth.edu/comp/about/projects/digitalmedia/images/resources/metadata-schemas.html
+10:42:13 From  Julie Dionne  to  Everyone : Le premier lien extension pour les multimedia
+10:43:03 From  Julie Dionne  to  Everyone : le deuxième sur les termes qu'on peut mettre dans notre fichier
+10:43:42 From  claudenozeres  to  Everyone : c’est un multimedia extension en DwC. Puis mettre URL: http://ipt.nature.ca/multimedia/Invertebrates/OthInvert/CMNI1989-0714A.TIF
+10:43:57 From  claudenozeres  to  Everyone : pris d’ici: http://ipt.nature.ca/resource?r=cmn_general_invertebrate
+10:46:16 From  Jon Pye (OTN)  to  Everyone : si vous avez telecharge les materiaux sur le GH https://github.com/otn-workshops/obis-workshop-fr on trouve celui-ci sous fichiers_Rmarkdown/1_pasApas_robis.Rmd
+10:59:26 From  Virginie Roy  to  Everyone : question sur les sections "Chunk" dans R. Pourquoi les messages viennent s'ajouter au script ?
+11:00:31 From  claudenozeres  to  Everyone : Je ne vois pas sur le mien.
+11:01:20 From  Caroline Vanier  to  Everyone : J'ai la carte, pas de message d'erreur
+11:01:40 From  Valérie Cypihot  to  Everyone : Moi aussi ca fonctionne
+11:01:50 From  claudenozeres  to  Everyone : Comme Caroline.
+11:02:36 From  Jon Pye (OTN)  to  Everyone : qq part dans la scripte on a un peu de code qui compare un vecteur a un scalar
+11:02:42 From  Jon Pye (OTN)  to  Everyone : https://datascience.stackexchange.com/questions/33351/what-is-the-problem-with-the-condition-has-length-1-and-only-the-first-elemen
+11:02:51 From  Jon Pye (OTN)  to  Everyone : c'est pas nous, c'est dans le map_leaflet()
+11:07:56 From  Pauline Chauvet  to  Everyone : library(ggplot2)
+11:12:38 From  claudenozeres  to  Jon Pye (OTN)(Direct Message) : Hi Jon, I should have explained! I was including you in emails because interesting example, but no, Claire is not on this workshop. She is the curator at Huntsman in St. Andrews, NB.
+11:13:43 From  Jon Pye (OTN)  to  claudenozeres(Direct Message) : I guessed she was outside these workshops, we may catch up with her sooner or later, I have been meaning to visit St Andrews for a while now, we have a couple collaborators up there. I'm hoping she won't mind being our guinea pig but I figured i'd give her a chance to say no :)
+11:13:49 From  claudenozeres  to  Jon Pye (OTN)(Direct Message) : (but perhaps they will like us to look at it, as you said!)
+11:14:37 From  Jon Pye (OTN)  to  claudenozeres(Direct Message) : having a few more folks train a critical eye on our data can only be helpful.
+11:14:48 From  claudenozeres  to  Jon Pye (OTN)(Direct Message) : I think it would be great—if they were not in the Atlantic workshop, they could sure use your demonstrations! ARC dataset has a lot of legacy data for all Atlantic Canada.
+11:15:52 From  Jon Pye (OTN)  to  claudenozeres(Direct Message) : we had someone from ARC in the pacific and atlantic workshop. they're building up capacity for sure.
+11:16:16 From  Pauline Chauvet  to  Everyone : R pour les data sciences
+11:16:19 From  Jon Pye (OTN)  to  Everyone : https://r4ds.had.co.nz/
+11:16:39 From  Pauline Chauvet  to  Everyone : auteur : Hadley Whickham et Garret Grolemund
+11:16:50 From  claudenozeres  to  Everyone : Je le garde près de mon lit :)
+11:17:02 From  Jon Pye (OTN)  to  Everyone : je ne sais pas si Naomi a encore le mien ou si c'est entombee dans mon office a l'universite :(
+11:19:38 From  Naomi Tress  to  Everyone : j'utilise pour adjuster la hauteur de mon ecran 😜
+11:20:06 From  Jon Pye (OTN)  to  Everyone : oof
+11:20:46 From  Jon Pye (OTN)  to  Everyone : l'ergonomie c'est important mais...
+11:33:32 From  ThorneMa  to  Everyone : Ne soit pas gêné Isabelle! J'ai réussi a m'en sortir parce que Geneviève m'a aidé en parrallèle ;)
+11:36:00 From  Naomi Tress  to  Everyone : https://github.com/otn-workshops/obis-workshop-fr/tree/master/Assignments
+11:39:05 From  Jon Pye (OTN)  to  Everyone : Assignment 1 - Exploring deep-water corals in OBISOn the deep-water coral page on Wikipedia we read this:The habitat of deep-water corals, also known as cold-water corals, extends to deeper, darker parts of the oceans than tropical corals, ranging from near the surface to the abyss, beyond 2,000 metres where water temperatures may be as cold as 4 °C. Deep-water corals belong to the Phylum Cnidaria and are most often stony corals (Scleractinia), but also include black and horny corals (Antipatharia) and soft corals (Alcyonacea) including the Gorgonians.For this assignment:Use robis to retrieve deep-water coral occurrences below 2000 m from OBIS Find how the occurrences are distributed among the different orders
+11:45:09 From  Gabriel Leblanc  to  Everyone : Devoir 1 - Explorer les coraux en eau profonde dans OBISSur la page des coraux en eau profonde de Wikipédia, nous lisons ceci:Les récifs coralliens d'eau profonde, également connus sous le nom de coraux d'eau froide, s'étendent aux parties plus profondes et plus sombres des océans que les récifs coralliens tropicaux, allant de près de la surface jusqu’aux abysses, c’est-à-dire au-delà de 2000 mètres où la température de l'eau peut être aussi froide que 4 ° C. Les coraux d'eau profonde appartiennent au phylum Cnidaria et sont le plus souvent des coraux pierreux (Scleractinia), mais comprennent également des coraux noirs et cornés (Antipatharia) et des coraux mous (Alcyonacea) dont les Gorgones.Pour ce devoir :Utilisez robis pour récupérer les occurrences de coraux en eau profonde en-dessous de 2000 m sur OBIS Trouvez comment les occurrences sont réparties entre les différents ordres
+11:45:46 From  Gabriel Leblanc  to  Everyone : au-delà = en-deçà 
+11:49:23 From  Geneviève  to  Everyone : Marilyn et moi aimerions se faire un groupe
+11:49:39 From  Geneviève  to  Everyone : Merci!
+11:51:34 From  Sandra V  to  Everyone : par niveau de connaisance de R ou quoi finalement?
+11:52:06 From  Virginie Roy  to  Everyone : Virginie-intermediate
+11:52:08 From  Benjamin Grégoire  to  Everyone : Benjamin=débutant
+11:52:09 From  Sandra V  to  Everyone : debutant
+11:52:29 From  Caroline Vanier  to  Everyone : Caroline vanier - intermédiaire
+11:52:37 From  Valérie Cypihot  to  Everyone : Valérie - intermédiaire
+11:52:37 From  TURCOTTECH  to  Everyone : debutant
+11:52:39 From  Laurie Isabel (MPO Sciences)  to  Everyone : Laurie - Intermédiaire
+11:56:59 From  Jon Pye (OTN)  to  Everyone : Devoir 1 - Explorer les coraux en eau profonde dans OBISSur la page des coraux en eau profonde de Wikipédia, nous lisons ceci:Les récifs coralliens d'eau profonde, également connus sous le nom de coraux d'eau froide, s'étendent aux parties plus profondes et plus sombres des océans que les récifs coralliens tropicaux, allant de près de la surface jusqu’aux abysses, c’est-à-dire en-deçà de 2000 mètres où la température de l'eau peut être aussi froide que 4 ° C. Les coraux d'eau profonde appartiennent au phylum Cnidaria et sont le plus souvent des coraux pierreux (Scleractinia), mais comprennent également des coraux noirs et cornés (Antipatharia) et des coraux mous (Alcyonacea) dont les Gorgones.Pour ce devoir :Utilisez robis pour récupérer les occurrences de coraux en eau profonde en-dessous de 2000 m sur OBIS. Trouvez comment les occurrences sont réparties entre les différents ordres
+11:58:16 From  Jon Pye (OTN)  to  Sandra V(Direct Message) : Sandra, avez vous recu un direction de joindre un salle?
+12:09:38 From  Jon Pye (OTN)  to  Everyone : brb!
+12:11:27 From  Jon Pye (OTN)  to  Everyone : le plus de # le plus petit le titre, oui
+12:14:43 From  Jon Pye (OTN)  to  Everyone : Ctrl-Alt-I
+12:15:06 From  Jon Pye (OTN)  to  Everyone : insert un chunk
+12:31:58 From  Jon Pye (OTN)  to  Everyone : c('Scleractinia', 'Alcyonacea') etc etc
+12:34:52 From  Jon Pye (OTN)  to  Everyone : mof <- measurements(occ, fields = c("scientificName", "decimalLongitude", "decimalLatitude"))View(mof)
+12:35:17 From  Jon Pye (OTN)  to  Everyone : occurrences(c('??','??'))
+12:38:40 From  Jon Pye (OTN)  to  Everyone : ?robis::occurrence
+12:38:54 From  Jon Pye (OTN)  to  Everyone : nous amene au definition et tous les arguments
+12:41:51 From  Benjamin Grégoire  to  Everyone : ,dwc <- occurrence(c("Scleractinia","Antipatharia","Alcyonacea"), startdepth = 2000)View(dwc)
+12:41:55 From  Benjamin Grégoire  to  Everyone : dwc <- occurrence(c("Scleractinia","Antipatharia","Alcyonacea"), startdepth = 2000)View(dwc)
+12:56:25 From  Naomi Tress  to  Everyone : excel worms query:=WEBSERVICE("http://www.marinespecies.org/rest/AphiaRecordsByVernacular/"&A1)
+14:03:11 From  Jon Pye (OTN)  to  Everyone : encore du neige ici :(
+14:10:09 From  Jon Pye (OTN)  to  Everyone : parlons ici des erreurs si on les a trouvees
+14:15:09 From  Jon Pye (OTN)  to  Everyone : on doit utilizer urlencode pour changer l'espace a '%20' pour qu'on confonde pas Chrome.
+14:16:02 From  Geneviève  to  Everyone : moi j'ai ce message qui aparait
+14:16:04 From  Geneviève  to  Everyone : No encoding supplied: defaulting to UTF-8.
+14:16:22 From  claudenozeres  to  Everyone : C’est ok, GC
+14:16:28 From  Geneviève  to  Everyone : ok merci Claude
+14:18:17 From  Jon Pye (OTN)  to  Everyone : si ca t'enerve, vous pouvez ajouter l'argument ', encoding = "UTF-8"' au appel httr::content() et ca devrait disparaitre
+14:18:24 From  Virginie Roy  to  Everyone : Je ne comprends pas ce conseil : on doit utilizer urlencode pour changer l'espace a '%20' pour qu'on confonde pas Chrome.
+14:18:38 From  Jon Pye (OTN)  to  Everyone : les URL ne peut pas avoir les espaces
+14:19:11 From  Jon Pye (OTN)  to  Everyone : alors le function urlencode() remplace les espaces comme l'un entre Salmo et salar avec une code qui represente l'espace mais est valide pour les URL
+14:19:56 From  Virginie Roy  to  Everyone : ah ok 1
+14:19:57 From  Virginie Roy  to  Everyone : !
+14:22:18 From  Virginie Roy  to  Everyone : Quand ce am on interrogeait OBIS, ce n'était pas par API aussi ?
+14:23:51 From  Jon Pye (OTN)  to  Everyone : le package robis utilize l'API directe qu'on va voir bientot (lundi?) mais on peut l'utiliser directement aussi
+14:24:03 From  Naomi Tress  to  Everyone : celui la cest l'api worms
+14:24:40 From  Jon Pye (OTN)  to  Everyone : robis est un... emballage? pour l'api OBIS, et les packages come taxize et worrms sont des emballages pour l'API worms
+14:25:14 From  Jon Pye (OTN)  to  Everyone : mais si on a nos propres workflow, on peut integrer ces API directement si on prefere.
+14:25:41 From  Virginie Roy  to  Everyone : merci Jon, ça me permet de structurer tous ces termes et façons d'interroger les données dans ma tête !
+14:28:09 From  Jon Pye (OTN)  to  Everyone : knitr c'est fantastique pour partager vos resultats
+14:28:20 From  Jon Pye (OTN)  to  Everyone : et les etapes que vous avez pris pour y arriver
+14:28:51 From  Jon Pye (OTN)  to  Everyone : , encoding = "UTF-8"
+14:29:44 From  Jon Pye (OTN)  to  Everyone : "UTF-8"
+14:32:19 From  claudenozeres  to  Everyone : Il est utile car il affiche des attributs et autres variables qui sont affichés en web—plus des choses venant de la base Aphia
+14:32:43 From  Jon Pye (OTN)  to  Everyone : Oui, pour marier les donnees aux autres systemes c'est tres utile.
+14:33:52 From  Jon Pye (OTN)  to  Everyone : selon OBIS ce n'est pas d'archivage, exactement.
+14:40:13 From  Virginie Roy  to  Everyone : oui mais 10To avec l'imagerie 4K ça va vite. C'est toujours le problème avec les images et vidéos !!
+14:41:07 From  Jon Pye (OTN)  to  Everyone : c'est la meme probleme avec les instruments acoustiques, ca ne prend pas beaucoup du temps pour manger quelques TB :)
+14:41:21 From  Virginie Roy  to  Everyone : oui effectivement !
+14:41:27 From  claudenozeres  to  Everyone : Et génomique.
+14:42:19 From  Gabriel Leblanc  to  Everyone : Voilà! Actuellement, on reçoit souvent des demandes pour héberger des 100-200 Gb… on n'a pas la capacité physique. Mais bientôt, avec les serveurs infonuagiques qu'on est sur le point d'acquérir, ce problème sera loin derrière nous!
+14:42:54 From  claudenozeres  to  Everyone : IPT d’OBIS est une ‘copie’ des données envoyées, à diffiuser. Pas strictement une archive—mais effectivement le cas car il pourrait que les originaux vont disparaître, et la copie en IPT est la seule qui persiste. Persistence est un enjeu avec les institutions.
+14:44:32 From  claudenozeres  to  Everyone : On a besoin des Peta pour la région et nation. Pour Go ou To, par jeu de données, il y a Amazon (disque dure ou AWS en nuage).
+14:45:50 From  Jon Pye (OTN)  to  Everyone : on a fait un calculation pour OTN recemment, et c'est encore plus economique pour nous d'acheter quelques TB et hoter nous-memes, mais ca devient de plus en plus proche
+14:47:56 From  Jon Pye (OTN)  to  Everyone : du meme facon que robis::occurrence(), il y a plein des facets qu'on peut utilizer pour selectionner :)
+14:50:54 From  Gabriel Leblanc  to  Everyone : Les données du MPO qui sont diffusées par l'OGSL se trouvent ici. Beaucoup de ressources sont hébergées à l'OGSL :
+14:50:55 From  Gabriel Leblanc  to  Everyone : https://catalogue.ogsl.ca/fr/organization/mpo
+14:51:01 From  Jon Pye (OTN)  to  Everyone : https://api.obis.org/v3/
+14:52:37 From  claudenozeres  to  Everyone : Sont des données ponctuelles, pas liées ensembles? Et pas ceux dans l’ongler BIoidiversité? https://ogsl.ca/bio/?lg=fr
+14:53:31 From  claudenozeres  to  Everyone : Me semble similaire au catalogue du gouvernement (sont hébergé, je ne sais pas). https://ouvert.canada.ca/data/fr/dataset/2dfa19db-a8cf-4460-97b9-710c2b856276
+14:54:24 From  claudenozeres  to  Everyone : Mais au moins celui en haut a des contacts (courriel) vs OGSL ;) https://catalogue.ogsl.ca/fr/dataset/e234a1a5-e21e-4c09-bc77-d92d72796ae7
+14:56:19 From  Julie Dionne  to  Everyone : Toutes les données de l'application biodiversité ne sont pas nécessairement dans le catalogue. Et même chose pour le catalogue. Nous ajoutons les données dans biodiversité à la demande des partenaires.
+14:57:27 From  Julie Dionne  to  Everyone : Pour les contacts et courriel dans le catalogue de l'OGSL sont présents dans les métadonnées de chaque jeu de données.
+14:58:11 From  claudenozeres  to  Everyone : Est-ce qu’il y a un moyen d’interroger ce qui est quoi et où en OGSL (pour savoir de la biodiversité)?
+14:58:56 From  claudenozeres  to  Everyone : Ah merci, Julie.
+15:01:28 From  Julie Dionne  to  Everyone : Ici on peut trouver des informations sur les membres ou collection qui sont disponible dans l'application biodiversité.
+15:01:29 From  Julie Dionne  to  Everyone : https://ogsl.ca/fr/biodiversite-contexte/
+15:02:18 From  claudenozeres  to  Everyone : Oui, mais il y a des autres en catalogue? Il faut chercher? J’essaye de comprendre la structure, merci!
+15:02:43 From  Julie Dionne  to  Everyone : Pour savoir ce qui est biologique dans le catalogue, on doit principalement faire une recherche par mots clés (nous sommes en train avec CIOOS d'implémenter les variables biologiques, qui ne sont pas encore supportés par CIOOS pour le moment.)
+15:04:10 From  Jon Pye (OTN)  to  Everyone : les images qu'on inclus ne sont pas les meilleurs resultats textuelles :O
+15:04:25 From  Julie Dionne  to  Everyone : Donc les mots clés et texte libre sont les principaux moyens de rechercher la biologie pour le moment. Sinon il est toujours possible de rechercher par organisation, par type de fichier.
+15:05:55 From  claudenozeres  to  Everyone : Oui, il faut savoir, où chercher, ce qu’il est dedans. Pas évident à découvrir. Mais je vous souhaite du progrès!
+15:09:42 From  Julie Dionne  to  Everyone : Oui en effet pour le moment la recherche des jeux de données biologiques n'est pas au point. Devenir membre de CIOOS à des avantages, mais en tant que plateforme encore "pilot" on n'avance pas toujours au rythme que l'on souhaiterai. Mais merci pour les commentaires, nous sommes justement en train de récolter des points de vue "users experiences", pour améliorer l'expérience.
+15:09:45 From  Virginie Roy  to  Everyone : Julie et Gabriel, l'OGSL va bientôt présenter à l'IML (Andréane Bastien ou son/sa délégué-e), donc ce serait intéressant de reprendre certaines questions des participants MPO ici pour contextualiser vraiment la présentation pour le MPO-IML le jeudi 20 mai 2021 (via Zoom). Pour questions ou conseils, vous pouvez me contacter, je suis sur le comité des conférences IML.
+15:14:41 From  Gabriel Leblanc  to  Everyone : Oui, merci Virginie! Effectivement, je peux me charger des noter certaines questions qui pourraient être répondues lors de cette présentation!
+15:14:41 From  Julie Dionne  to  Everyone : Oui certainement. On prends bonne note des interrogations/questions soulevé par les participants. Nous allons en faire part à la personne qui doit faire la présentation de mai.
+15:16:41 From  Geneviève  to  Everyone : parfait! à tantôt
+15:16:44 From  Virginie Roy  to  Everyone : Commentaire générale, au début de l'horaire, à côté de vos noms, pourriez-vous mettre le titre de votre poste, ce qui va nous aider à savoir à qui dans le futur poser une question !
+15:16:55 From  Virginie Roy  to  Everyone : Facilitateurs: OGSLGabriel Leblanc (leblancg@ogsl.ca)Julie Dionne Lavoie (dionnej@ogsl.ca)Pauline Chauvet (chauvetp@ogsl.ca)OTNJon Pye (jdpye@dal.ca), Ocean Tracking NetworkBrian Jones (Brian.Jones@dal.ca), OceanTracking NetworkNaomi Tress (ntress@dal.ca), OceanTracking Network
+15:18:11 From  Jon Pye (OTN)  to  Everyone : on peut faire un petit amendement au site GitHub, oui. :)
+15:18:18 From  Virginie Roy  to  Everyone : super !
+15:20:13 From  Gabriel Leblanc  to  Everyone : En attendant, il y a moyen de retrouver nos postes ici : https://ogsl.ca/fr/equipe-ogsl/
+15:21:48 From  Pauline Chauvet  to  Everyone : Pour les plus motivés : https://thinkr.fr/les-api-un-enfer/
+15:22:35 From  Virginie Roy  to  Everyone : et j'en profite pour demander aux facilitateurs de OGSL et OTN du présent atelier, à quel fréquence et intensité maximale(!) on peut vous demander des questions et conseils ? dites-nous vos limites svp ?! on sait tous que tout le monde est surchargé de travail. ou vous préférez p-ê qu'on demande au personnel MPO/OBIS en premier ?
+15:23:30 From  Gabriel Leblanc  to  Everyone : J'aurais tendance à vous dire de nous inonder de questions! Après, on sera au moins en mesure de vous référer vers les personnes qui ont les réponses. Dans le meilleur des cas, nous pourrons y répondre!
+15:26:02 From  Naomi Tress  to  Everyone : je pense qu'il ya aucun limites des question, seulment des limite de temps pour repondre!
+15:27:34 From  Naomi Tress  to  Everyone : j'espere que vous parlez d'apres l'atelier? ces 4 jour nous sommes ici completment pour vous aider, certainement
+15:29:44 From  Virginie Roy  to  Everyone : Merci ! Oui je voulais dire après l'atelier ! Sur quel forum/plateforme pourrait-on poser/partager nos questions/réponses afin de partager entre nous tous ? ça éviterait par exemple des questions similaires.
+15:30:26 From  Naomi Tress  to  Everyone : si vous joindrez OBIS slack, pouvez voir que Jon Pye est frequanment la, et apres nous d'OTN, fair la support des rechercheur, c'est un des tache de notre mandat
+15:30:53 From  Pauline Chauvet  to  Everyone : https://app.slack.com/client/T01MYU3LPTM/C01NNHEB4V6
+15:31:15 From  Naomi Tress  to  Everyone : 👍
+15:33:23 From  Virginie Roy  to  Everyone : au retour de la pause, parlez-nous un peu de slack svp, je ne connais pas.
+15:35:01 From  Jon Pye (OTN)  to  Everyone : les gens de OGSL, du Hakai Institute, du CIOOS Atlantique et d'OTN peut partager aussi aux conversations chez le Slack de OBIS Canada
+15:35:48 From  Pauline Chauvet  to  Everyone : jarrive dans 2min
+15:36:11 From  Benjamin Grégoire  to  Everyone : Moi non plus (l'acces au logiciel Slack)
+15:36:42 From  Jon Pye (OTN)  to  Everyone : en l'entretemps on peut accesser via l'interface web obiscanada.slack.com
+15:37:46 From  Jon Pye (OTN)  to  Everyone : RStudio vs 'R Studio', oui
+15:38:43 From  Naomi Tress  to  Everyone : https://app.slack.com/client/T01MYU3LPTM/C01NNHEB4V6
+15:39:57 From  Jon Pye (OTN)  to  Everyone : moi je suis collecteur des Slack, jusqu'a un douzaine maintenant.
+15:42:14 From  Virginie Roy  to  Everyone : super, je crois que Slack est un excellent moyen !
+15:49:08 From  Virginie Roy  to  Everyone : question !
+15:50:05 From  Benjamin Grégoire  to  Everyone : Pour la corse, ne serait-ce pas plutôt une coodonnée moyenne qui réfère au pays (le centre)?
+15:51:41 From  claudenozeres  to  Everyone : Oui.
+15:59:10 From  Caroline Vanier  to  Everyone : Cool! Ça va m'être très utile, merci!
+15:59:56 From  Jon Pye (OTN)  to  Everyone : je suis en train de me preuver que match_taxa marche avec les unique valeurs du noms scientifiques alors il ne demande pas 10,000 temps pour 10,000 recordes du meme espece.
+16:02:35 From  Caroline Vanier  to  Everyone : même problème pour moi.
+16:03:20 From  Jon Pye (OTN)  to  Everyone : https://twitter.com/hadleywickham/status/1108234368240271360?s=20
+16:03:28 From  Jon Pye (OTN)  to  Everyone : Hadley, pourquooooi?
+16:04:59 From  Jon Pye (OTN)  to  Everyone : si on veut etre compte come developpeur du obistools… serait un PR assez comprehensive https://github.com/iobis/obistools/search?q=data_frame
+16:05:00 From  claudenozeres  to  Everyone : arrgh!
+16:06:46 From  claudenozeres  to  Everyone : bathymétrie vient d’IOC ? Je crois.
+16:08:00 From  claudenozeres  to  Everyone : Ces stats sont très utiles pour une distribution assez uniforme. Mais pas si populations disperses.
+16:11:56 From  Jon Pye (OTN)  to  Everyone : oui on l'a trouvee das les commentaires du Pieter qq part.
+16:16:23 From  Jon Pye (OTN)  to  Everyone : c'est GEBCO
+16:16:35 From  claudenozeres  to  Everyone : merci!
+16:17:26 From  Jon Pye (OTN)  to  Everyone : On peut substituer nos propres object bathymetriques: https://github.com/iobis/obistools/issues/44 hey, c'est qui ca!?
+16:21:12 From  Julie Dionne  to  Everyone : :O
+16:22:56 From  Naomi Tress  to  Everyone : report est visible dans le manuel d'obis mais je nas pas reussi  quands jai l'essayer
+16:24:32 From  Jon Pye (OTN)  to  Everyone : ca serait peut-etre un nouvelle Issue pour relever avec les gens iOBIS
+16:27:00 From  Jon Pye (OTN)  to  Everyone : si on veut doubler la communaute de developpeurs pour obistools… :)
+16:27:24 From  Jon Pye (OTN)  to  Everyone : https://mybinder.org/v2/gh/otn-workshops/obis-workshop-fr/HEAD?filepath=Quiz/notebooks/Data%20Processing%20Quiz.ipynb
+16:31:06 From  Benjamin Grégoire  to  Everyone : Pauline, Gabriel, Julie, Jon & Naomi. Je vous remercie pour cette excellente formation. J'ai maintenant les informations que j'avais besoin. Je ne serai donc pas à la formation lundi et mardi.
+16:31:44 From  Pauline Chauvet  to  Everyone : =),
+16:32:09 From  Geneviève  to  Everyone : le mien vient juste d'ouvrir
+16:32:14 From  Caroline Vanier  to  Everyone : Ce n'est pas encore fini de charger
+16:32:31 From  Jon Pye (OTN)  to  Everyone : on te manquerait, Benjamin. les jours qui suivent on va travailler ensemble pour amener les jeux de donnees vers OBIS Canada et leur IPT.
+16:33:08 From  Jon Pye (OTN)  to  Everyone : mais si tu aurait jamais des questions, il y a OBIS Canada Slack aussi que les pages GH. Et le courriel, je suppose.
+16:33:54 From  Julie Dionne  to  Everyone : Merci pour ta participation Benjamin!
+16:38:52 From  Jon Pye (OTN)  to  Everyone : et c'est un cible mobile, la taxonomie acceptee! on ne peut pas savoir que serait acceptee dans dix ans. c'est bon qu'on preserve les noms commes ils sont fournis.
+16:41:23 From  Jon Pye (OTN)  to  Everyone : https://forms.gle/NeemqNeyHr5ytCxn9
+16:41:25 From  Naomi Tress  to  Everyone : https://forms.gle/XD2E5YGcpF1JdgYQ9
+16:43:28 From  Virginie Roy  to  Everyone : merci à lundi !
+16:43:58 From  Jon Pye (OTN)  to  Everyone : vous avez tous maintenant des comptes sur OBIS Canada, aussi, mais on va pratiquer sur un IPT temporaire pour Lundi/Mardi.
+16:45:06 From  Valérie Cypihot  to  Everyone : Merci! Bon weekend!
+16:45:17 From  ThorneMa  to  Everyone : Merci, à lundi
+16:45:22 From  Geneviève  to  Everyone : Merci beaucoup! Bonne fin de semaine à tous!
+16:45:24 From  claudenozeres  to  Everyone : Merci à toute l’équipe pour ces 2 jours!! C’était super!
+16:45:25 From  Laurie Isabel (MPO Sciences)  to  Everyone : Merci et bon weekend!
+16:45:32 From  Caroline Vanier  to  Everyone : Merci, bonne fin de semaine!
+16:45:39 From  Jon Pye (OTN)  to  Everyone : bon weekend tout le monde!
+16:45:40 From  TURCOTTECH  to  Everyone : Bonne fin de semaine, à lundi!!!
+16:45:54 From  Pauline Chauvet  to  Everyone : bye
+16:47:04 From  Sandra V  to  Everyone : Merci, bonne fin de semaine
+16:47:15 From  Julie Dionne  to  Everyone : Bon week-end!!!

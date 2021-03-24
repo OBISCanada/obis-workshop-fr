@@ -1,0 +1,117 @@
+09:54:02 From  Caroline Vanier  to  Everyone : Est-ce possible d'avoir le lien vers votre dossier dans github (again :-))
+09:54:08 From  Jon Pye (OTN)  to  Everyone : absolument :)
+09:54:13 From  Jon Pye (OTN)  to  Everyone : https://github.com/otn-workshops/obis-workshop-fr
+09:54:17 From  Caroline Vanier  to  Everyone : merci!
+09:57:16 From  Jon Pye (OTN)  to  Everyone : https://github.com/otn-workshops/obis-workshop-fr/tree/master/vos_jeux_de_donnees/Isabelle_sp_envahissante
+10:03:23 From  Jon Pye (OTN)  to  Everyone : https://github.com/otn-workshops/obis-workshop-fr/blob/master/Liens_aide/AideR.txt
+10:04:49 From  Jon Pye (OTN)  to  Everyone : ca peut etre utile de telecharger a nouveau le project/dossier GitHub
+10:05:32 From  Jon Pye (OTN)  to  Everyone : https://github.com/otn-workshops/obis-workshop-fr
+10:19:02 From  Caroline Vanier  to  Everyone : feuille mémoire Dplyr https://rstudio.com/wp-content/uploads/2016/01/data-wrangling-french.pdf
+10:20:00 From  Jon Pye (OTN)  to  Everyone : c'est un de mes feuilles preferees pour avoir proche a mon clavier quand je transforme des donnees avec R!
+10:20:36 From  Jon Pye (OTN)  to  Everyone : (et aussi son jumelle qui se traite de python et le package 'pandas')
+10:20:44 From  Caroline Vanier  to  Everyone : Me too!
+10:22:26 From  Valérie Cypihot  to  Everyone : Merci!
+10:23:05 From  Jon Pye (OTN)  to  Everyone : si on veut choisir des autres basemap: https://carto.com/help/building-maps/basemap-list/
+10:25:38 From  Jon Pye (OTN)  to  Everyone : #(rouges)(verts)(bleus)
+10:25:52 From  Jon Pye (OTN)  to  Everyone : deux caracteres hexidecimaux pour chaque
+10:26:03 From  Julie Dionne  to  Everyone : https://htmlcolorcodes.com/fr/
+10:26:21 From  Julie Dionne  to  Everyone : Ici on peut obtenir les codes de couleurs
+10:28:07 From  Jon Pye (OTN)  to  Everyone : si on veut creer un palette, colorbrewer c'est un outil qui garantie qu'on trouve un palette acceptable pour tout le monde, j'ai eu chance aussie d'utiliser https://color.adobe.com/create/color-wheel pour construire un palette avec un bon esthetique :)
+10:28:39 From  Jon Pye (OTN)  to  Everyone : aussie->aussi c'est fun de trouver comment autocorrect veut ameliorer mon francais :)
+10:30:04 From  Caroline Vanier  to  Everyone : Oui, go!
+10:30:58 From  Jon Pye (OTN)  to  Everyone : si nous traversons tout ce matin nous pourrons aussi essayer un autre de nos devoirs :)
+10:36:42 From  Sandra V  to  Jon Pye (OTN)(Direct Message) : C'est quoi le nom du logiciel de clonage?
+10:38:13 From  Jon Pye (OTN)  to  Sandra V(Direct Message) : git ?
+10:38:54 From  Sandra V  to  Jon Pye (OTN)(Direct Message) : oui pour cloner le git et que plusiuers utilisateurs peuvent travailler en parallel
+10:39:03 From  Jon Pye (OTN)  to  Sandra V(Direct Message) : oh oui c'est git qu'on utilize pour ca
+10:39:52 From  Jon Pye (OTN)  to  Sandra V(Direct Message) : il y a quelques idees qu'on doit adopter pour travailler en parallel effectivement mais c'est git pour les equipes d'informaticiens plus larges.
+10:40:31 From  Sandra V  to  Jon Pye (OTN)(Direct Message) : thanks
+10:43:09 From  Jon Pye (OTN)  to  Everyone : remotes::install_github("ropenscilabs/rnaturalearthhires") ?
+10:51:09 From  TURCOTTECH  to  Jon Pye (OTN)(Direct Message) : Je ne vois pas le lien pour le devoir?
+10:51:23 From  TURCOTTECH  to  Jon Pye (OTN)(Direct Message) : Good
+10:52:10 From  Jon Pye (OTN)  to  Everyone : juste une autre moment. le devoir c'est https://github.com/otn-workshops/obis-workshop-fr/blob/master/Devoirs/Assignment2.Rmd  alors sous votre fichier pour l'atelier c'est sous Devoirs/Assignment2.Rmd
+10:56:07 From  Valérie Cypihot  to  Everyone : occurrence?
+10:56:37 From  Jon Pye (OTN)  to  Everyone : la fonction pour chercher les occurrence on a bien besoin
+10:57:38 From  claudenozeres  to  Everyone : Non, c’est un ver, pas des mesures
+10:58:59 From  Jon Pye (OTN)  to  Everyone : si on sait quel fonction on veut utiliser, mais pas quel library() nous le provenons, on peut demander avec ?? comme ca:  ??occurrence . Ca nous provient une liste avec tous les fonctions qui inclus ce terme de recherche.
+11:00:27 From  Caroline Vanier  to  Everyone : library(maps)world <- map_data("world")ggplot() + geom_polygon(data = world, aes(x = long, y = lat, group = group), fill = "#dddddd") + geom_point(data = lagis, aes(x = decimalLongitude, y = decimalLatitude))+ coord_fixed(1) ggplot() + geom_polygon(data = world, aes(x = long, y = lat, group = group), fill = "#dddddd") + geom_point(data = lagis, aes(x = decimalLongitude, y = decimalLatitude)) + coord_fixed(1, xlim = c(-50, 180), ylim = c(-60, 100))
+11:10:33 From  Caroline Vanier  to  Everyone : # Pour trouver les données sur la terrelibrary(obistools)land <- check_onland(Lagis)map_leaflet(land)# Mettre le buffer de 1000 mland_buffer <- check_onland(Lagis, buffer = 1000)map_leaflet(land_buffer)# voir sur la carteworld <- map_data("world")ggplot() + geom_polygon(data = world, aes(x = long, y = lat, group = group), fill = "#dddddd") + geom_point(data = land, aes(x = decimalLongitude, y = decimalLatitude), color = "#cc3300") + geom_point(data = land_buffer, aes(x = decimalLongitude, y = decimalLatitude), color = "#ff9900") + coord_fixed(1)
+11:23:39 From  Julie Dionne  to  Everyone : Génial!! Merci!
+11:35:29 From  TURCOTTECH  to  Everyone : Hello
+11:37:33 From  ThorneMa  to  Everyone : Je continuerais avec Isabelle et Pauline
+11:47:14 From  Jon Pye (OTN)  to  Everyone : https://dwc.tdwg.org/terms/
+11:47:37 From  Jon Pye (OTN)  to  Everyone : https://github.com/tdwg/dwc-for-biologging/wiki/Acoustic-sensor-enabled-tracking-of-blue-sharks
+11:47:56 From  Jon Pye (OTN)  to  Everyone : https://github.com/tdwg/dwc-for-biologging/tree/master/derived/camtrap-dp
+11:50:06 From  Sandra V  to  Jon Pye (OTN)(Direct Message) : salut je suis dans la mauvais salle?
+11:56:15 From  Jon Pye (OTN)  to  Everyone : https://www.deepl.com/pro#developer
+12:10:09 From  Jon Pye (OTN)  to  Everyone : https://cran.r-project.org/web/packages/whisker/whisker.pdf
+12:19:20 From  Jon Pye (OTN)  to  Everyone : %matplotlib inline%
+12:26:27 From  Jon Pye (OTN)  to  Everyone : https://github.com/gbif/ipt/wiki/GMPHowToGuide
+12:28:51 From  Jon Pye (OTN)  to  Everyone : https://eml.ecoinformatics.org/
+12:29:11 From  Jon Pye (OTN)  to  Everyone : https://eml.ecoinformatics.org/schema/
+12:34:31 From  Jon Pye (OTN)  to  Everyone : https://cran.r-project.org/web/packages/rjade/vignettes/intro.html
+12:37:50 From  Jon Pye (OTN)  to  Everyone : https://cran.r-project.org/web/packages/brew/brew.pdf
+12:45:33 From  Jon Pye (OTN)  to  Everyone : https://sbclter.msi.ucsb.edu/external/InformationManagement/EML_211_schema/docs/eml-2.1.1/index.html
+12:51:44 From  Jon Pye (OTN)  to  Everyone : https://desktop.github.com/
+13:53:15 From  naomi tress  to  Everyone : https://cultofthepartyparrot.com/
+13:53:41 From  Ryan Gosse  to  Everyone : A+
+13:54:00 From  Jon Pye (OTN)  to  Everyone : ryan! https://teespring.com/partyparrotee?pid=787&cid=103458
+13:58:37 From  Jon Pye (OTN)  to  Everyone : nous pourrons completer le tuxedo
+14:15:12 From  Jon Pye (OTN)  to  Everyone : https://join.slack.com/t/obiscanada/shared_invite/zt-o3bcqrrl-9INHhXV2lPBFiUSHB8qUTA
+14:16:57 From  claudenozeres  to  Everyone : Ho! Parrot alert!
+14:17:20 From  claudenozeres  to  Everyone : de Maria sur Slack: I was just looking at obis.org and 4 of the 6 featured "recently published" datasets are from OBIS Canada.:grinning:
+14:17:27 From  naomi tress  to  Everyone : c'est a ajouter ca?!?...
+14:18:13 From  Pauline Chauvet  to  Everyone : la formation est ouverte aux inscriptions (29 avril)[13:03]https://ogsl.ca/fr/formations/
+14:18:43 From  naomi tress  to  Everyone : En 2021, l’OGSL propose des formations en gestion de données !Cette première formation, d’une durée de deux heures, portera principalement sur la gestion des données et des métadonnées de biodiversité et abordera aussi certaines notions sur les données physico-chimiques. Elle vise à offrir de l’information sur les normes de gestion de données (normes OBIS, Darwin Core et ISO) telles qu’appliquées dans le contexte du Système intégré d’observation des océans du Canada (SIOOC), sur la structuration des bases de données et sur certaines notions élémentaires des données en accès libre. Pour répondre aux exigences contextuelles, les formations seront données en ligne sur la plateforme Zoom.
+14:18:47 From  Pauline Chauvet  to  Everyone : https://ogsl.ca/fr/formations/
+14:19:56 From  guenardg  to  Jon Pye (OTN)(Direct Message) : Il y a ce package R pour gérer le format EML: https://cran.r-project.org/web/packages/EML/index.html
+14:20:24 From  Jon Pye (OTN)  to  guenardg(Direct Message) : promising !
+14:21:01 From  guenardg  to  Jon Pye (OTN)(Direct Message) : C'est résent, alors je suppose que les version récentes du format seront supportées.
+14:21:45 From  guenardg  to  Jon Pye (OTN)(Direct Message) : On peut jetter un oeil dans une breakout room si tu veux.
+14:22:08 From  Jon Pye (OTN)  to  guenardg(Direct Message) : mm, je jete un oeil maintenant sur le vignette, on peut reconvener chez 'aide R' :)
+14:24:30 From  Jon Pye (OTN)  to  Everyone : https://cran.r-project.org/web/packages/EML/EML.pdf
+14:26:27 From  Jon Pye (OTN)  to  Everyone : https://cran.r-project.org/web/packages/emld/index.html
+14:55:46 From  Jon Pye (OTN)  to  Everyone : https://cran.r-project.org/web/packages/EML/EML.pdf
+14:55:56 From  Jon Pye (OTN)  to  Everyone : https://cran.r-project.org/web/packages/emld/index.html
+15:18:16 From  naomi tress  to  Everyone : Contenu de la formation     Introduction et présentation    Vers la découverte et l’innovation des connaissances : l’OGSL, le SIOOC et les principes FAIR.    Éléments de structure    Les formats libres d’accès (open source) et leur pertinence en gestion de données.    Les métadonnées    Les principales métadonnées, la gestion des données sensibles et les DOI.    Gestion des données et des jeux de données    Les normes du Ocean Biogeographic Information System (OBIS) et du Darwin Core. Comment les données environnementales, les prises de mesures et les données d’occurrence s’agencent-elles dans le contexte de la gestion de données de biodiversité? Quelles normes internationales s’appliquent aux données et aux métadonnées? Révision de quelques notions de taxonomie et leur application en contexte de gestion de données.    Le processus itératif    Pas à pas, exploration de données à l’état brut jusqu’à leur diffusion, par exemple sur le portail de l’OGSL.    Période de questions et commentaires
+15:20:57 From  Jon Pye (OTN)  to  Everyone : http://ipt.iobis.org/obiscanada/resource?r=dfosealiceaudits
+15:29:47 From  naomi tress  to  Everyone : s'approch-obis
+15:33:03 From  Jon Pye (OTN)  to  Everyone : https://obis.org/dataset/fe879ea6-c7f5-4b7e-a026-b9878fa4f3ff
+15:33:30 From  naomi tress  to  Everyone : c'est SQLite?
+15:33:41 From  Virginie Roy  to  Everyone : oui SQLite
+15:34:31 From  Virginie Roy  to  Everyone : Ici le projet est de consolider les données bycatch (inverts, fish) lors des évaluations de stock en côtier dans la région du Québec (ex. les relevés pétoncles, buccin, homard, crabe)
+15:42:50 From  Jon Pye (OTN)  to  Everyone : et on a deja reporte les evaluations de stock, alors on veut creer un addition avec les comptes de bycatch?
+15:43:08 From  Jon Pye (OTN)  to  Everyone : ou est-qu'on doit reporter les evaluations-memes aussi?
+16:07:58 From  Jon Pye (OTN)  to  Everyone : mes enfants sont retournees :) :O
+16:08:46 From  Jon Pye (OTN)  to  Everyone : lien pour le quiz: https://mybinder.org/v2/gh/otn-workshops/obis-workshop-fr/HEAD?filepath=Quiz/notebooks/DataRecap%20Quiz.ipynb
+16:08:54 From  Jon Pye (OTN)  to  Everyone : sont de retour?
+16:09:29 From  Jon Pye (OTN)  to  Everyone : parfois, ils aime bien la lutte
+16:16:05 From  Jon Pye (OTN)  to  Everyone : library(eml)  library(emld)
+16:18:52 From  Valérie Cypihot  to  Everyone : ça m'intéresse! valerie.cypihot@gmail.com
+16:19:10 From  Caroline Vanier  to  Everyone : caroline.vanier@dfo-mpo.gc.ca
+16:19:22 From  Isabelle  to  Everyone : isabelle.berube@dfo-mpo.ca intéressée pour la suite 
+16:19:47 From  Christian Turcotte  to  Everyone : christian.turcotte@dfo-mpo.gc.ca
+16:20:27 From  Christian Turcotte  to  Everyone : Pas de souci
+16:20:36 From  Ryan Gosse  to  Everyone : https://notebooks.gesis.org/binder/jupyter/user/otn-workshops-obis-workshop-fr-wmbzgxzc/notebooks/Quiz/notebooks/Recap%20Quiz.ipynb
+16:21:14 From  guenardg  to  Everyone : Guillaume Guénard <guillaume.guenard@gmail.com>
+16:21:56 From  Ryan Gosse  to  Everyone : https://gesis.mybinder.org/binder/v2/gh/otn-workshops/obis-workshop-fr/40cdee033a5623d868345a696bbae8fbc77c74ee?filepath=Quiz%2Fnotebooks%2FRecap%20Quiz.ipynb
+16:22:06 From  Christian Turcotte  to  Everyone : Never give up
+16:22:55 From  Caroline Vanier  to  Everyone : Ça marche pour moi
+16:23:40 From  guenardg  to  Everyone : got 500: Internal Server Error 
+16:24:43 From  Jon Pye (OTN)  to  Everyone : c'est du territoire inconnu, la gesis :)
+16:25:59 From  Jon Pye (OTN)  to  Everyone : desolee que ca ne marche pas pour vous, guillaume, essayons de nouveau et sinon on va traverser les reponses ensembles tout meme.
+16:38:30 From  Sandra V  to  Everyone : Je dois vous quitter, merci pour la formation!
+16:38:38 From  Jon Pye (OTN)  to  Everyone : https://forms.gle/KAEvj9nG9wGpZhBe7
+16:38:41 From  Christian Turcotte  to  Everyone : Bye Sandra
+16:38:51 From  Sandra V  to  Everyone : yes yes
+16:40:04 From  Pauline Chauvet  to  Everyone : https://ogsl.ca/fr/formations/
+16:40:08 From  Pauline Chauvet  to  Everyone : 29 avril
+16:40:57 From  Pauline Chauvet  to  Everyone : chauvetp@ogsl.cadionnej@ogsl.ca
+16:41:08 From  Jon Pye (OTN)  to  Everyone : jdpye@dal.ca
+16:41:20 From  naomi tress  to  Everyone : ntress@dal.ca ou bien OTNDC@dal.ca
+16:42:06 From  Jon Pye (OTN)  to  Everyone : pourquoi est-ce que mon iPhone fait ce bruit-la!?
+16:42:27 From  Isabelle  to  Everyone : Merci pour l'excellente formation
+16:42:42 From  Valérie Cypihot  to  Everyone : Merci beaucoup à vous tous pour la formation! :)
+16:42:46 From  Laurie Isabel (MPO Sciences)  to  Everyone : Excellente formation! Merci beaucoup
+16:42:53 From  Caroline Vanier  to  Everyone : Merci, très pertinent!
+16:46:31 From  Brian Jones  to  Everyone : Merci
